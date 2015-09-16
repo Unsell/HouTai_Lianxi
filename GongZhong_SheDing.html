@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="js/bootstrap-toggle.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-toggle.css"/>
+		<link rel="stylesheet" type="text/css" href="css/GongZhong_SheDing.css"/>
+		<title>工种设定</title>
+	</head>
+	<body>
+		<div class="box_header">
+			<span class="title">工种设定</span>
+			<span class="add_earner">添加一个新工种</span>
+		</div>
+		<div class="box_content">
+			<div class="earner_type">
+				<div class="box_gongzhong">
+					<span class="GongZhong_title">大厅项目</span>
+					<div class="box_button">
+						<button class="btn btn_add" type="button">添加</button>
+						<button class="btn btn_change" type="button">修改</button>
+						<button class="btn btn_delete" type="button">删除</button>
+					</div>
+				</div>
+				<div class="box_XiangMu">中式超级大保健</div>
+				<div class="box_XiangMu">中式超级大保健</div>
+				<div class="box_XiangMu">中式超级大保健</div>
+				<div class="box_XiangMu">中式超级大保健</div>
+				<div class="total_num">共4个项目</div>
+			</div>
+			<div class="earner_type">
+				<div class="box_gongzhong">
+					<span class="GongZhong_title">大厅项目</span>
+					<div class="box_button">
+						<button class="btn btn_add" type="button">添加</button>
+						<button class="btn btn_change" type="button">修改</button>
+						<button class="btn btn_delete" type="button">删除</button>
+					</div>
+				</div>
+				<div class="box_XiangMu">中式超级大保健</div>
+				<div class="box_XiangMu">中式超级大保健</div>
+				<div class="box_XiangMu">中式超级大保健</div>
+				<div class="total_num">共4个项目</div>
+			</div>
+			<div class="earner_type">
+				<div class="box_gongzhong">
+					<span class="GongZhong_title">大厅项目</span>
+					<div class="box_button">
+						<button class="btn btn_add" type="button">添加</button>
+						<button class="btn btn_change" type="button">修改</button>
+						<button class="btn btn_delete" type="button">删除</button>
+					</div>
+				</div>
+				<div class="box_XiangMu">中式超级大保健</div>
+				<div class="total_num">共4个项目</div>
+			</div>
+			
+		</div>
+		<!--弹窗---添加项目-->
+		<div class="Project_Add">	
+			<div class="box_add_project">
+				<div class="box_title">所有项目</div>
+				<div class="project_all">
+					<label class="checkbox-inline spill_over">
+					  <input type="checkbox" checked data-toggle="toggle" data-style="ios">中式按摩asdaaasda
+					</label>
+					<label class="checkbox-inline spill_over">
+					  <input type="checkbox"  data-toggle="toggle" data-style="ios">足底按摩
+					</label>
+					<label class="checkbox-inline spill_over">
+					  <input type="checkbox"  data-toggle="toggle" data-style="ios">中式按摩asdaaasda
+					</label>
+					<!--<label class="checkbox-inline spill_over">
+					  <input type="checkbox"  data-toggle="toggle" data-style="ios">足底按摩
+					</label>
+					<label class="checkbox-inline spill_over">
+					  <input type="checkbox"  data-toggle="toggle" data-style="ios">中式按摩asdaaasda
+					</label>
+					<label class="checkbox-inline spill_over">
+					  <input type="checkbox"  data-toggle="toggle" data-style="ios">足底按摩
+					</label>
+					<label class="checkbox-inline spill_over">
+					  <input type="checkbox"  data-toggle="toggle" data-style="ios">中式按摩asdaaasda
+					</label>
+					<label class="checkbox-inline spill_over">
+					  <input type="checkbox"  data-toggle="toggle" data-style="ios">足底按摩
+					</label>
+					<label class="checkbox-inline spill_over">
+					  <input type="checkbox"  data-toggle="toggle" data-style="ios">中式按摩asdaaasda
+					</label>
+					<label class="checkbox-inline spill_over">
+					  <input type="checkbox"  data-toggle="toggle" data-style="ios">足底按摩
+					</label>
+					<label class="checkbox-inline spill_over">
+					  <input type="checkbox"  data-toggle="toggle" data-style="ios">中式按摩asdaaasda
+					</label>
+					<label class="checkbox-inline spill_over">
+					  <input type="checkbox"  data-toggle="toggle" data-style="ios">足底按摩
+					</label>
+					<label class="checkbox-inline spill_over">
+					  <input type="checkbox"  data-toggle="toggle" data-style="ios">中式按摩asdaaasda
+					</label>
+					<label class="checkbox-inline spill_over">
+					  <input type="checkbox"  data-toggle="toggle" data-style="ios">足底按摩
+					</label>-->
+				</div>
+				<div class="box_button">
+					<button class="btn cancle" type="button">取消</button>
+					<button class="btn comfirm" type="button">确定</button>
+				</div>
+			</div>
+		</div>
+		<!--/*弹窗——添加新工种*/-->
+		<div class="Popup_add">
+			<div class="box_add">
+				<div class="box_title">添加工种</div>
+				<div class="form-group">
+				    <input type="text" class="form-control" id="" placeholder="请输入工种名称">
+				</div>
+				<div class="box_button">
+					<button class="btn  cancle" type="button">取消</button>
+					<button class="btn  comfirm" type="button">确定</button>
+				</div>
+			</div>
+		</div>
+		<!--/*弹窗——修改工种名称*/-->
+		<div class="Popup_change">
+			<div class="box_add">
+				<div class="box_title">修改工种名称</div>
+				<div class="box_tips">
+					<div class="form-group">
+					    <input type="text" class="form-control" id="" placeholder="请输入工种名称">
+					</div>
+				</div>
+				<div class="box_button">
+					<button class="btn  cancle" type="button">取消</button>
+					<button class="btn  comfirm" type="button">确定</button>
+				</div>
+			</div>
+		</div>
+		<!--弹窗——删除工种-->
+		<div class="Popup_delete">
+			<div class="box_add">
+				<div class="box_title">删除工种</div>
+				<div class="box_tips">
+				   <p>你是否要删除当前工种？</p>
+				</div>
+				<div class="box_button">
+					<button class="btn  cancle" type="button">取消</button>
+					<button class="btn  comfirm" type="button">确定</button>
+				</div>
+			</div>
+		</div>
+		<!--弹窗——删除项目-->
+		<div class="Project_delete">
+			<div class="box_add">
+				<div class="box_title">删除工种</div>
+				<div class="box_tips">
+				   <p>你是否要删除当前项目？</p>
+				   <p>若该工种下的技师有这个项目，这个项目也会被删除！</p>
+				</div>
+				<div class="box_button">
+					<button class="btn cancle" type="button">取消</button>
+					<button class="btn comfirm" type="button">确定</button>
+				</div>
+			</div>
+		</div>
+		<!--弹窗——修改名称-->
+			<!--<form action="edit_project_type" method="get">
+				<div id="Popup_change_<%= type.id %>" class="Popup_change">
+					<div class="box_change">
+						<div class="form-group">
+							<input type="hidden" name="id" value="<%= type.id %>" />
+							<label for="exampleInputEmail1">请输入工种的新名称:</label>
+					    <input type="text" class="form-control" name="name" placeholder="">
+						</div>
+						<div class="box_button">
+							<button class="btn btn-default_2 cancle_change" type="button">取消</button>
+							<button class="btn btn-default_2 confirm_change" type="submit" name="confirm_button" >确定</button>
+						</div>
+					</div>
+				</div>
+			</form>-->
+		<!--弹窗——选择手牌类型-->
+		<div class="Change_HandNum">
+			<div class="box_add">
+				<div class="box_title">请选择手牌类型:</div>
+				<div class="box_radio">
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="Radios" id="Radio1" value="1" checked="">
+					    	男
+					  </label>
+					</div>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="Radios" id="Radio2" value="2">
+							女
+					  </label>
+					</div>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="Radios" id="Radio3" value="3" >
+					    	综合
+					  </label>
+					</div>
+				</div>
+				<div class="box_button">
+					<button class="btn cancle" type="button">取消</button>
+					<button class="btn comfirm" type="button">确定</button>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			$(function(){
+				/*弹窗——选择手牌类型*/
+//				$('.add_earner').click(function(){
+//					$('.Change_HandNum').show();
+//				})
+//				
+//				$('.cancle_HandNum').click(function(){
+//					$('.Change_HandNum').hide();
+//				})
+//				
+//				$('.comfirm_HandNum').click(function(){
+//					$('.Change_HandNum').hide();
+//				})
+				/*弹窗——添加项目*/
+				$('.btn_add').click(function(){
+					$('.Project_Add').show();
+				})
+				
+				$('.cancle_add').click(function(){
+					$('.Project_Add').hide();
+				})
+				
+				$('.comfirm_add').click(function(){
+					$('.Project_Add').hide();
+				})
+				/*弹窗——添加新工种*/
+				$('.add_earner').click(function(){
+					$('.Popup_add').show();
+				})
+				
+				$('.cancle_add').click(function(){
+					$('.Popup_add').hide();
+				})
+				
+				$('.comfirm_add').click(function(){
+					$('.Popup_add').hide();
+				})
+				
+				//弹窗——删除工种
+				$('.btn_delete').click(function(){
+					$('.Popup_delete').show();
+				})
+				
+				$('.cancle_delete').click(function(){
+					$('.Popup_delete').hide();
+				})
+				
+				$('.comfirm_delete').click(function(){
+					$('.Popup_delete').hide();
+				})
+				
+				//弹窗——修改名称
+				$('.btn_change').click(function(){
+					$('.Popup_change').show();
+				})
+				
+				$('.cancle_change').click(function(){
+					$('.Popup_change').hide();
+				})
+				
+				$('.comfirm_change').click(function(){
+					$('.Popup_change').hide();
+				})
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>  
+<html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<title>Document change</title>  
+<style type="text/css">  
+*{margin:0px;padding:0px}  
+ul {list-style-type:none}  
+ul li,ul a,ul span {width:280px;height:180px;border-radius:20px}  
+ul li{float:left;overflow:hidden;margin:20px 0px 0px 20px;}  
+ul a{display:block;position:relative}  
+ul a span{position:absolute;background:url("../img/6.jpg") no-repeat}  
+</style>  
+</head>  
+<body>  
+<ul>  
+    <li><a href="http://alisa.uehtml.com/"><img src="../img/1.jpg" alt="" /><span> 0</span></a></li>  
+    <li><a href="javascript://"><img src="../img/1.jpg" alt="" /><span> 1</span></a></li>  
+    <li><a href="javascript://"><img src="../img/3.jpg" alt="" /><span> 2</span></a></li>  
+    <li><a href="javascript://"><img src="../img/4.jpg" alt="" /><span> 3</span></a></li>  
+    <li><a href="javascript://"><img src="../img/4.jpg" alt="" /><span> 4</span></a></li>  
+    <li><a href="javascript://"><img src="../img/3.jpg" alt="" /><span> 5</span></a></li>  
+    <li><a href="javascript://"><img src="../img/2.jpg" alt="" /><span> 6</span></a></li>  
+    <li><a href="javascript://"><img src="../img/1.jpg" alt="" /><span> 7</span></a></li>  
+    <li><a href="javascript://"><img src="../img/2.jpg" alt="" /><span> 8</span></a></li>  
+    <li><a href="javascript://"><img src="../img/3.jpg" alt="" /><span> 9</span></a></li>  
+    <li><a href="javascript://"><img src="../img/4.jpg" alt="" /><span> 3</span></a></li>  
+    <li><a href="javascript://"><img src="../img/4.jpg" alt="" /><span> 4</span></a></li>  
+    <li><a href="javascript://"><img src="../img/3.jpg" alt="" /><span> 5</span></a></li>  
+    <li><a href="javascript://"><img src="../img/2.jpg" alt="" /><span> 6</span></a></li>  
+    <li><a href="javascript://"><img src="../img/1.jpg" alt="" /><span> 7</span></a></li>  
+    <li><a href="javascript://"><img src="../img/2.jpg" alt="" /><span> 8</span></a></li>  
+    <li><a href="javascript://"><img src="../img/3.jpg" alt="" /><span> 9</span></a></li>  
+    <li><a href="javascript://"><img src="../img/4.jpg" alt="" /><span> 3</span></a></li>  
+    <li><a href="javascript://"><img src="../img/4.jpg" alt="" /><span> 4</span></a></li>  
+    <li><a href="javascript://"><img src="../img/3.jpg" alt="" /><span> 5</span></a></li>  
+    <li><a href="javascript://"><img src="../img/2.jpg" alt="" /><span> 6</span></a></li>  
+    <li><a href="javascript://"><img src="../img/1.jpg" alt="" /><span> 7</span></a></li>  
+    <li><a href="javascript://"><img src="../img/2.jpg" alt="" /><span> 8</span></a></li>  
+    <li><a href="javascript://"><img src="../img/3.jpg" alt="" /><span> 9</span></a></li>  
+</ul>  
+<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>  
+<script type="text/javascript">  
+   function getpos(ev) {  
+        var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;  
+        var scrollleft = document.documentElement.scrollLeft || document.body.scrollLeft;  
+        return {  
+            x: ev.clientX + scrollleft,  
+            y: ev.clientY + scrolltop  
+        }  
+  
+    }  
+(function($,undefined){  
+    $('ul > li').mouseenter(function(e){  
+        var pos = [this.offsetLeft,this.offsetTop,getpos(e).x,getpos(e).y,this.offsetWidth,this.offsetHeight],lock = 0,px = 20,mv = $(this).find('span');  
+            //console.log(this.offsetWidth+"sss"+this.offsetHeight)  
+        if (pos[0] <= pos[2] && pos[0]+px >= pos[2] && !lock) {  
+            mv.css({right:pos[4]+'px',top:'0px',left:'auto',bottom:'auto'});  
+            lock = 1;  
+            mv.stop(true,false).animate({right:'0px'},300);  
+              
+        }  
+        if (pos[0]+pos[4] >= pos[2] && pos[0]+pos[4]-px <= pos[2] && !lock) {  
+            mv.css({left:pos[4]+'px',top:'0px',right:'auto',bottom:'auto'});  
+            lock = 1;  
+            mv.stop(true,false).animate({left:'0px'},300);  
+              
+        }  
+        if (pos[1] <= pos[3] && pos[1]+px >= pos[3] && !lock) {  
+            mv.css({bottom:pos[5]+'px',left:'0px',top:'auto',right:'auto'});  
+            lock = 1;  
+            mv.stop(true,false).animate({bottom:'0px'},300);  
+        }  
+        if (pos[1]+pos[5] >= pos[3] && pos[1]+pos[5]-px <= pos[3] && !lock) {  
+            mv.css({top:pos[5]+'px',left:'0px',bottom:'auto',right:'auto'});  
+            lock = 1;  
+            mv.stop(true,false).animate({top:'0px'},300);
+        }  
+        return  
+    });  
+    $('ul > li').mouseout(function(e){  
+        var pos = [this.offsetLeft,this.offsetTop,getpos(e).x,getpos(e).y,this.offsetWidth,this.offsetHeight],lock = 0,px = 15,mv = $(this).find('span');  
+        if (pos[0] > pos[2] && !lock) {  
+            mv.css({top:'0px',left:'auto',bottom:'auto'});  
+            lock = 1;  
+            mv.stop(true,false).animate({right:pos[4]+'px'},300);  
+        }  
+        if (pos[0]+pos[4] <= pos[2] && !lock) {  
+            mv.css({top:'0px',right:'auto',bottom:'auto'});  
+            lock = 1;  
+            mv.stop(true,false).animate({left:pos[4]+'px'},300);  
+        }  
+        if (pos[1] > pos[3] && !lock) {  
+            mv.css({left:'0px',top:'auto',right:'auto'});  
+            lock = 1;  
+            mv.stop(true,false).animate({bottom:pos[5]+'px'},300);  
+        }  
+        if (pos[1]+pos[5]-px <= pos[3] && !lock) {  
+            mv.css({left:'0px',bottom:'auto',right:'auto'});  
+            lock = 1;  
+            mv.stop(true,false).animate({top:pos[5]+'px'},300);  
+        }  
+        return  
+    });  
+})(jQuery);  
+</script>  
+</body>  
+</html>  

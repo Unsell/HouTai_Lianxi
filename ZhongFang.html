@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/ZhongFang.css"/>
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<title>钟房</title>
+	</head>
+	<body>
+		<div class="content">
+			<div class="content_title">技师调度</div>
+			<div class="box_search">
+				<form>
+					<input class="form-control" type="text" placeholder="工号/技师/项目" />
+					<button class="btn btn_type" type="button">搜索</button>
+					<button class="btn btn_type" type="button">查看所有</button>
+				</form>
+			</div>
+			<div class="tabbable tabs-below"  >
+				<ul class="nav nav-tabs" id="myTab2">
+					<li class="active lbule">
+						<a data-toggle="tab" href="#ShangZhong">上钟</a>
+					</li>
+
+					<li>
+						<a data-toggle="tab" href="#XiaZhong">下钟</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div id="ShangZhong" class="tab-pane in active">
+						<form action="">
+							<div class="box_infor">
+								<span class="">选择项目</span>
+								<select class="form-control" name="">
+									<option value="">请选择</option>
+									<option value="">泰式</option>
+									<option value="">韩式</option>
+								</select>
+							</div>
+							<div class="box_infor">
+								<span class="span_type">技师</span>
+								<input class="form-control" type="text" placeholder="" />
+								<select class="form-control" name="">
+									<option value="">更换技师</option>
+									<option value="">0234(女)</option>
+									<option value="">0214(男)</option>
+								</select>
+							</div>
+							<div class="box_infor">
+								<span class="span_type">房间</span>
+								<input class="form-control" type="text" placeholder="" />
+							</div>
+							<div class="box_infor">
+								<span class="span_type">锁牌</span>
+								<input class="form-control" type="text" placeholder="" />
+							</div>
+							<div class="box_btn">
+								<button class="btn btn_Giveup">放弃返回</button>
+								<button class="btn btn_Confirm">确定上钟</button>
+							</div>
+						</form>
+					</div>
+					<div id="XiaZhong" class="tab-pane">
+						<form action="">
+							<div class="box_infor">
+								<span class="span_type">锁牌</span>
+								<input class="form-control" type="text" placeholder="" />
+							</div>
+							<div class="box_infor">
+								<span class="span_type">技师</span>
+								<input class="form-control" type="text" placeholder="" />
+							</div>
+							<div class="box_infor">
+								<span class="span_type">房间</span>
+								<input class="form-control" type="text" placeholder="" />
+							</div>
+							<div class="box_infor">
+								<span class="span_type">项目</span>
+								<input class="form-control" type="text" placeholder="" />
+							</div>
+							<div class="box_infor">
+								<span class="span_type_2">已服务</span>
+								<input class="form-control input_type_2" type="text" placeholder="" />
+							</div>
+							<div class="box_btn">
+								<button class="btn btn_Giveup">放弃返回</button>
+								<button class="btn btn_Confirm">确定下钟</button>
+							</div>
+						</form>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,84 @@
+
+ul,li{
+	margin: 0;
+	padding: 0;
+}
+.content{
+	width: 60%;
+	color: #666666;
+	margin: 0 auto;
+}
+.relay_self,.relay_friend{
+	font-weight: 700;
+	margin-top: 40px;
+	font-size: 17px;
+	
+}
+.relay_table{
+	width: 100%;
+	text-align: center;
+}
+.Left_alignment{
+	text-align: left;
+	width: 48%;
+	padding-left: 5% !important;
+}
+.padd_top{
+	padding-top: 14px !important;
+}
+.box_input{
+	width: 50%;
+	margin: 0 auto;
+	position: relative;
+}
+.box_input .Before{
+	position: absolute;
+	top: 6px;
+	left: 10%;
+}
+.box_input .After{
+	position: absolute;
+	top: 6px;
+	right: 10%;
+}
+.box_input .form-group .form-control{
+	padding: 6px 30px;
+}
+.box_input  .form-group {
+  margin-bottom: 0;
+}
+
+.relay_self ul,.relay_friend ul{
+	margin-left: 20px;
+	font-size: 15px;
+	color: #999999;
+	font-weight: 500;
+}
+.title_rule{
+	font-size: 17px;
+	margin: 40px 0 30px 0;
+	font-weight: 700;
+}
+.box_text{
+	margin-bottom: 30px;
+}
+.box_text .form-group label{
+	margin: 0 0 10px 10px;
+	letter-spacing: 1px;
+}
+.box_text .form-group textarea{
+	height: 150px;
+	font-size: 15px;
+	resize: none;
+}
+.btn_release{
+	width: 40%;
+	font-size: 17px;
+	color: white;
+	background: #41B075;
+	margin: 30px 30% 40px;
+	padding: 10px 15px;
+}
+
+
+

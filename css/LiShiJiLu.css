@@ -1,0 +1,69 @@
+
+.extend_table{
+	width: 80%;
+	margin: 30px auto 0;
+	text-align: center;
+	font-size: 18px;
+	color: #666666;
+}
+.title_size{
+	font-size: 20px;
+}
+.type_setting{
+	
+}
+
+.vetically_time{
+	padding-top: 20px !important;
+}
+.vetically_state,.vetically_detailed{
+	padding-top: 30px !important;
+}
+.vetically_detailed span{
+	color: #666666;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.tr_content{
+	display: none;
+	box-sizing: border-box;
+}
+/*弹出框*/
+
+.content_btn{
+	margin-top: 20px;
+}
+.btn_type_left{
+	width: 140px;
+	padding: 10px 15px;
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+}
+.btn_type_center{
+	width: 140px;
+	padding: 10px 15px;
+	border-radius: 0;
+	margin-left: -6px;
+}
+.btn_type_right{
+	width: 140px;
+	padding: 10px 15px;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+	margin-left: -6px;
+}
+.btn_active{
+	background-color: #DEDEDE;
+}
+.content_rule{
+	padding: 50px 5% 20px 13%;
+}
+.rule_ourself,.rule_attention,.rule_Noattention{
+	text-align: left;
+}
+.rule_ourself>ol>li,.rule_attention>ol>li,.rule_Noattention>ol>li{
+	margin-bottom: 10px;
+}
+.rule_attention,.rule_Noattention{
+	display: none;
+}

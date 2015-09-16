@@ -1,0 +1,141 @@
+
+.content{
+	width: 96%;
+	margin: 10px auto;
+	text-align: center;
+	color: #808080;
+}
+.content_title{
+	text-align: left;
+  	color: #328CCE;
+  	font-size: 22px;
+  	height: 34px;
+  	line-height: 34px;
+  	border-bottom: 1px solid #D5E3EF;
+}
+.box_search{
+	margin-top: 20px;
+	margin-bottom: 40px;
+	
+}
+.form-control{
+	width: 35%;
+	height: 35px;
+	display: inline-block;
+	/*-moz-border-radius-topright: none;
+	-moz-border-radius-bottomright: none;*/
+}
+.box_search .btn_type{
+	width: 120px;
+	background: #00A5FF;
+	color: white;
+}
+
+.tabs-below{
+	width: 80%;
+	margin: 0 auto;
+}
+.nav-tabs>li{
+	width: 120px;
+	color: #808080;
+}
+.nav-tabs>li:first-child{
+	margin-left: 41%;
+}
+.tab-content{
+	border: 1px solid #DDDDDD;
+	padding: 16px 12px;
+	position: relative;
+	z-index: 11;
+	border-top: none;
+}
+
+/*上钟*/
+#ShangZhong{
+	padding-top: 20px;
+	padding-bottom: 50px;
+	position: relative;
+}
+.box_infor{
+	margin-bottom: 20px;
+	text-align: left;
+	margin-left: 30%;
+}
+.box_infor select{
+	width: 38%;
+	color: #808080;
+}
+.box_infor input{
+	width: 38%;
+	color: #808080;
+	margin-left: -32px;
+}
+#ShangZhong .box_infor span{
+	font-size: 17px;
+	padding-right: 10px;
+}
+.span_type{
+	letter-spacing: 33px;
+}
+#ShangZhong .box_btn{
+	position: absolute;
+	bottom: -70px;
+	left: 36%;
+}
+#ShangZhong .btn_Giveup{
+	width: 150px;
+	background: #6E524A;
+	color: white;
+	border-radius: 2px;
+}
+#ShangZhong .btn_Confirm{
+	width: 150px;
+	background: #40B174;
+	color: white;
+	border-radius: 2px;
+}
+/*下钟*/
+#XiaZhong{
+	padding-top: 20px;
+	padding-bottom: 50px;
+	position: relative;
+}
+.box_infor input{
+	width: 38%;
+	color: #808080;
+	margin-left: -32px;
+}
+#XiaZhong .box_infor span{
+	font-size: 17px;
+	padding-right: 10px;
+}
+.span_type{
+	letter-spacing: 33px;
+}
+.span_type_2{
+	letter-spacing: 8px;
+}
+#XiaZhong .input_type_2{
+	width: 38%;
+	color: #808080;
+	margin-left: -8px;
+}
+#XiaZhong .box_btn{
+	position: absolute;
+	bottom: -70px;
+	left: 36%;
+}
+#XiaZhong .btn_Giveup{
+	width: 150px;
+	background: #6E524A;
+	color: white;
+	border-radius: 2px;
+}
+#XiaZhong .btn_Confirm{
+	width: 150px;
+	background: #40B174;
+	color: white;
+	border-radius: 2px;
+}
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="layout.css"/>
+	</head>
+	<body>
+		<h1>Snapshots</h1>
+		<ul id="imagegallery">
+			<li><a href="../img/1.jpg" title="11">
+				<img src="../img/1.jpg" alt="1" />
+			</a></li>
+			<li><a href="../img/2.jpg" title="22">
+				<img src="../img/2.jpg" alt="2" />
+			</a></li>
+			<li><a href="../img/3.jpg" title="33">
+				<img src="../img/3.jpg" alt="3" />
+			</a></li>
+			<li><a href="../img/4.jpg" title="44">
+				<img src="../img/4.jpg" alt="4" />
+			</a></li>
+			<li><a href="../img/5.jpg" title="55">
+				<img src="../img/5.jpg" alt="5" />
+			</a></li>
+			<li><a href="../img/6.jpg" title="66">
+				<img src="../img/6.jpg" alt="6" />
+			</a></li>
+		</ul>
+		<img id="placeholder" src="" alt="The num of images!" width="500px" height="300px" />
+		<p id="description">Choose an image.</p>
+		<select id="select">
+			<option value="">请选择</option>
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="mercedes">Mercedes</option>
+			<option value="audi">Audi</option>
+		</select>
+		<script src="new_file.js"></script>
+		<script type="text/javascript">
+			var select = document.getElementById('select');
+			
+			select.onchange = function(){
+//				alert(this.value);
+			}
+		</script>
+	</body>
+</html>

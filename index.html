@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<!--<script type="text/javascript" src="js/bootstrap.min.js"></script>-->
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<link rel="stylesheet" href="index.css" />
+		<style type="text/css">
+			div{
+				font-size: 30px;
+				padding: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="form" method="get">
+		Date: <input type="datetime-local" name="user_date" required=""/>
+		<input class="btn" type="submit" />
+		</form>
+		i
+		<div id="">dsadasd</div>
+		<div id="">dsadasd</div>
+		<div id="">dsadasd</div>
+		<div id="">dsadasd</div>
+		<div id="">dsadasd</div>
+		<div id="">dsadasd</div>
+		<div id="">dsadasd</div>
+		<div id="">dsadasd</div>
+		<div id="">dsadasd</div>
+		<div id="">dsadasd</div>
+		<div id="">dsadasd</div>
+		<a href="WeiXin.html">阿迪萨斯大时代</a>
+		<div id="">dsadasd</div>
+		<div id="">dsadasd</div>
+		<div id="">dsadasd</div>
+		<div id="">dsadasd</div>
+		<div id="">dsadasd</div>
+		<div id="">dsadasd</div>
+		<div id="">dsadasd</div>
+		<img class="scan_img" src="img/1.jpg" alt="" width="80px" height="80px" />
+		<img class="scan_img" src="img/2.jpg" alt="" width="80px" height="80px" />
+		<img class="scan_img" src="img/3.jpg" alt="" width="80px" height="80px" />
+		<img class="scan_img" src="img/4.jpg" alt="" width="80px" height="80px" />
+		<!--<div class="Enlarge_img">
+			<div class="box_enlarge">
+				<img src="" alt="" />
+				<button class="btn cancle_enlarge">返回</button>
+				<button class="btn comfirm_enlarge">打印</button>
+			</div>
+		</div>-->
+		<script type="text/javascript">
+			$(function(){
+				$('.scan_img').click(function(){
+					var img_url = $(this).attr('src');
+					var str = joint(img_url);
+					$('body').append(str);
+				})
+				$('body').on('click','.Enlarge_img',function(){
+					$(this).remove();
+				})
+				$('body').on('click','.comfirm_enlarge',function(){
+					alert(213);
+				})
+				
+				function joint(img){
+					var str = '<div class="Enlarge_img">'+
+						'<div class="box_enlarge">'+
+							'<img src="'+img+'" alt="" />'+
+							'<button class="btn cancle_enlarge">返回</button>'+
+							'<button class="btn comfirm_enlarge">打印</button>'+
+						'</div>'+
+						
+					'</div>'
+					
+//					'<div class="mui-backdrop">'+
+//					'<div><img src="'+img+'" class="open_big_img"></div>'+
+//					'<button class="stamp">打印</button>'+
+//					'</div>';
+					return str;
+				}
+	
+			})
+		</script>
+	</body>
+</html>

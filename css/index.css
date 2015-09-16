@@ -1,0 +1,47 @@
+#qwe{
+	width: 100px;
+	height: 100px;
+	background: red;
+	border-radius: 50%;
+}
+.Enlarge_img{
+	-webkit-user-select: none;
+  	position: fixed;
+  	width: 100%;
+  	height: 100%;
+  	background: rgba(0,0,0,0.35);
+  	top: 0;
+  	left: 0;
+  	z-index: 105;
+}
+.box_enlarge{
+	/*margin-top: 100px;*/
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+}
+.box_enlarge img{
+	width: 350px;
+	height: 350px;
+	margin: 0 auto 30px;
+	display: block;
+}
+.cancle_enlarge{
+	width: 120px;
+	background: #60C791;
+	color: white;
+	margin-right: 20px;
+}
+.comfirm_enlarge{
+	width: 120px;
+	background: #6E524A;
+	color: white;
+}
+
+
+
+
+
+
+
+

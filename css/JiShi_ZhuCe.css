@@ -1,0 +1,68 @@
+
+.content{
+	color: #666666;
+}
+.title{
+	width: 85%;
+	margin: 0 7% 70px 5% ;
+	padding: 15px 0 5px 30px;
+	font-size: 24px;
+	border-bottom: 1px solid #EFEFEF;
+}
+.box_QR_code{
+	width: 85%;
+	margin: 0 7% 70px 5% ;
+	overflow: hidden;
+}
+.box_WeChat{
+	float: left;
+	width: 45%;
+	text-align: center;
+	padding: 20px 0 50px 7% ;
+	border-right: 1px solid #D9D9D9;
+}
+.WeChat_title{
+	font-size: 21px;
+	margin-bottom: 50px;
+}
+
+.lingke{
+	font-size: 21px;
+	color: #714141;
+}
+.tips{
+	margin-top: 8px;
+	margin-bottom: 15px;
+}
+
+.box_Clue{
+	float: left;
+	width: 55%;
+	text-align: center;
+	padding: 20px 7% 50px 0 ;
+}
+.Clue_title{
+	font-size: 21px;
+	margin-bottom: 30px;
+}
+.Poll_Code_num{
+	width: 180px;
+	height: 50px;
+	line-height: 45px;
+	margin: 0 auto 20px;
+	font-size: 21px;
+	color: #714141;
+	border: 2px solid #CBCBCB;
+}
+.Change{
+	border: none;
+	border-radius: 3px;
+	background: #41B075;
+	padding: 7px 45px;
+	color: white;
+}
+.explain{
+	margin-top: 10px;
+}
+
+
