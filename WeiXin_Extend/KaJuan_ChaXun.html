@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.js"></script>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/KaJuan_ChaXun.css"/>
+		<title>会员卡劵查询</title>
+	</head>
+	<body>
+		<div class="content_Voucher_Query">
+			<div class="box_Query">
+				<div class="form-group">
+					<input type="text" class="form-control input-lg input_Menber" id="" placeholder="请输入客户锁牌号">
+				</div>
+				<button class="btn btn_search" type="button">搜索</button>
+			</div>
+			<!--<div class="tips">锁牌未激活（有没扫描进场）</div>-->
+			<div class="box_result">
+				<div class="tabbable tabs-below"  >
+					<ul class="nav nav-tabs" id="myTab2">
+						<li class="active lbule">
+							<a data-toggle="tab" href="#KeShiYong">可使用</a>
+						</li>
+						<li>
+							<a data-toggle="tab" href="#YiShiYong">已使用</a>
+						</li>
+						<li>
+							<a data-toggle="tab" href="#YiGuoQi">已过期</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div id="KeShiYong" class="tab-pane in active">
+							<div class="box_user_img">
+								<span>微信：</span>
+								<div class="box_img">
+									<img src="../img/3.jpg" alt="" />
+								</div>
+							</div>
+							<div class="tab_title">0002号锁牌可使用卡券</div>
+							
+							<table class="table table-bordered CanUse_table">
+								<tr class="table_title">
+									<td>序号</td>
+									<td>卡券号</td>
+									<td>优惠项目</td>
+									<td>金额</td>
+									<td>期限</td>
+									<td>使用规则</td>
+									<td>操作</td>
+								</tr>
+								<tr class="tr_project">
+									<td class="td_center">1</td>
+									<td class="td_center">15485121</td>
+									<td class="td_center">泰式按摩</td>
+									<td class="td_center">50元</td>
+									<td class="td_center">
+										2015/09/01~2015/09/20
+									</td>
+									<td>
+										<a class="btn btn-primary" role="button" data-toggle="popover" data-placement="right" data-html="true" data-trigger="hover" title="订单详情" data-content="客户锁牌: 0004 &lt;br&gt;&lt;br&gt;服务项目:小钟推油&lt;br&gt;技师信息:0880(男)Dellx&lt;br&gt;房间号码:0123&lt;br&gt;开始时间:2015/09/17 11:43&lt;br&gt;预计结束:2015/09/17 13:23&lt;br&gt;">查看</a>
+									</td>
+									<td class="td_center">
+										<label>
+											<input type="checkbox" id="inlineCheckbox1" value="option1">
+										</label>
+									</td>
+								</tr>
+								<tr class="tr_project">
+									<td class="td_center">1</td>
+									<td class="td_center">15485121</td>
+									<td class="td_center">泰式按摩</td>
+									<td class="td_center">50元</td>
+									<td class="td_center">
+										2015/09/01~2015/09/20
+									</td>
+									<td>
+										<a class="btn btn-primary" role="button" data-toggle="popover" data-placement="right" data-html="true" data-trigger="hover" title="订单详情" data-content="客户锁牌: 0004 &lt;br&gt;&lt;br&gt;服务项目:小钟推油&lt;br&gt;技师信息:0880(男)Dellx&lt;br&gt;房间号码:0123&lt;br&gt;开始时间:2015/09/17 11:43&lt;br&gt;预计结束:2015/09/17 13:23&lt;br&gt;">查看</a>
+									</td>
+									<td class="td_center">
+										<label>
+											<input type="checkbox" id="inlineCheckbox1" value="option1">
+										</label>
+									</td>
+								</tr>
+								<tr class="tr_project">
+									<td class="td_center">1</td>
+									<td class="td_center">15485121</td>
+									<td class="td_center">泰式按摩</td>
+									<td class="td_center">50元</td>
+									<td class="td_center">
+										2015/09/01~2015/09/20
+									</td>
+									<td>
+										<a class="btn btn-primary" role="button" data-toggle="popover" data-placement="right" data-html="true" data-trigger="hover" title="订单详情" data-content="客户锁牌: 0004 &lt;br&gt;&lt;br&gt;服务项目:小钟推油&lt;br&gt;技师信息:0880(男)Dellx&lt;br&gt;房间号码:0123&lt;br&gt;开始时间:2015/09/17 11:43&lt;br&gt;预计结束:2015/09/17 13:23&lt;br&gt;">查看</a>
+									</td>
+									<td class="td_center">
+										<label>
+											<input type="checkbox" id="inlineCheckbox1" value="option1">
+										</label>
+									</td>
+								</tr>
+								
+							</table>
+							<button class="btn btn_confirm" type="button">确定</button>
+						</div>
+						<div id="YiShiYong" class="tab-pane">
+							<div class="box_user_img">
+								<span>微信：</span>
+								<div class="box_img">
+									<img src="../img/3.jpg" alt="" />
+								</div>
+							</div>
+							<div class="tab_title">0002号锁牌已使用卡券</div>
+							<table class="table table-bordered CanUse_table">
+								<tr class="table_title">
+									<td>序号</td>
+									<td>卡券号</td>
+									<td>优惠项目</td>
+									<td>金额</td>
+									<td>使用时间</td>
+									<td>使用规则</td>
+									<td>操作</td>
+								</tr>
+								<tr class="tr_project">
+									<td class="td_center">1</td>
+									<td class="td_center">15485121</td>
+									<td class="td_center">泰式按摩</td>
+									<td class="td_center">50元</td>
+									<td class="td_center">
+										2015/09/01~2015/09/20
+									</td>
+									<td>
+										<a class="btn btn-primary" role="button" data-toggle="popover" data-placement="right" data-html="true" data-trigger="hover" title="订单详情" data-content="客户锁牌: 0004 &lt;br&gt;&lt;br&gt;服务项目:小钟推油&lt;br&gt;技师信息:0880(男)Dellx&lt;br&gt;房间号码:0123&lt;br&gt;开始时间:2015/09/17 11:43&lt;br&gt;预计结束:2015/09/17 13:23&lt;br&gt;">查看</a>
+									</td>
+									<td class="td_center">已使用</td>
+								</tr>
+								<tr class="tr_project">
+									<td class="td_center">1</td>
+									<td class="td_center">15485121</td>
+									<td class="td_center">泰式按摩</td>
+									<td class="td_center">50元</td>
+									<td class="td_center">
+										2015/09/01~2015/09/20
+									</td>
+									<td>
+										<a class="btn btn-primary" role="button" data-toggle="popover" data-placement="right" data-html="true" data-trigger="hover" title="订单详情" data-content="客户锁牌: 0004 &lt;br&gt;&lt;br&gt;服务项目:小钟推油&lt;br&gt;技师信息:0880(男)Dellx&lt;br&gt;房间号码:0123&lt;br&gt;开始时间:2015/09/17 11:43&lt;br&gt;预计结束:2015/09/17 13:23&lt;br&gt;">查看</a>
+									</td>
+									<td class="td_center">已使用</td>
+								</tr>
+								<tr class="tr_project">
+									<td class="td_center">1</td>
+									<td class="td_center">15485121</td>
+									<td class="td_center">泰式按摩</td>
+									<td class="td_center">50元</td>
+									<td class="td_center">
+										2015/09/01~2015/09/20
+									</td>
+									<td>
+										<a class="btn btn-primary" role="button" data-toggle="popover" data-placement="right" data-html="true" data-trigger="hover" title="订单详情" data-content="客户锁牌: 0004 &lt;br&gt;&lt;br&gt;服务项目:小钟推油&lt;br&gt;技师信息:0880(男)Dellx&lt;br&gt;房间号码:0123&lt;br&gt;开始时间:2015/09/17 11:43&lt;br&gt;预计结束:2015/09/17 13:23&lt;br&gt;">查看</a>
+									</td>
+									<td class="td_center">已使用</td>
+								</tr>
+								<tr class="tr_project">
+									<td class="td_center">1</td>
+									<td class="td_center">15485121</td>
+									<td class="td_center">泰式按摩</td>
+									<td class="td_center">50元</td>
+									<td class="td_center">
+										2015/09/01~2015/09/20
+									</td>
+									<td>
+										<a class="btn btn-primary" role="button" data-toggle="popover" data-placement="right" data-html="true" data-trigger="hover" title="订单详情" data-content="客户锁牌: 0004 &lt;br&gt;&lt;br&gt;服务项目:小钟推油&lt;br&gt;技师信息:0880(男)Dellx&lt;br&gt;房间号码:0123&lt;br&gt;开始时间:2015/09/17 11:43&lt;br&gt;预计结束:2015/09/17 13:23&lt;br&gt;">查看</a>
+									</td>
+									<td class="td_center">已使用</td>
+								</tr>
+								<tr class="tr_project">
+									<td class="td_center">1</td>
+									<td class="td_center">15485121</td>
+									<td class="td_center">泰式按摩</td>
+									<td class="td_center">50元</td>
+									<td class="td_center">
+										2015/09/01~2015/09/20
+									</td>
+									<td>
+										<a class="btn btn-primary" role="button" data-toggle="popover" data-placement="right" data-html="true" data-trigger="hover" title="订单详情" data-content="客户锁牌: 0004 &lt;br&gt;&lt;br&gt;服务项目:小钟推油&lt;br&gt;技师信息:0880(男)Dellx&lt;br&gt;房间号码:0123&lt;br&gt;开始时间:2015/09/17 11:43&lt;br&gt;预计结束:2015/09/17 13:23&lt;br&gt;">查看</a>
+									</td>
+									<td class="td_center">已使用</td>
+								</tr>
+								<tr class="tr_project">
+									<td class="td_center">1</td>
+									<td class="td_center">15485121</td>
+									<td class="td_center">泰式按摩</td>
+									<td class="td_center">50元</td>
+									<td class="td_center">
+										2015/09/01~2015/09/20
+									</td>
+									<td>
+										<a class="btn btn-primary" role="button" data-toggle="popover" data-placement="right" data-html="true" data-trigger="hover" title="订单详情" data-content="客户锁牌: 0004 &lt;br&gt;&lt;br&gt;服务项目:小钟推油&lt;br&gt;技师信息:0880(男)Dellx&lt;br&gt;房间号码:0123&lt;br&gt;开始时间:2015/09/17 11:43&lt;br&gt;预计结束:2015/09/17 13:23&lt;br&gt;">查看</a>
+									</td>
+									<td class="td_center">已使用</td>
+								</tr>
+								<tr class="tr_project">
+									<td class="td_center">1</td>
+									<td class="td_center">15485121</td>
+									<td class="td_center">泰式按摩</td>
+									<td class="td_center">50元</td>
+									<td class="td_center">
+										2015/09/01~2015/09/20
+									</td>
+									<td>
+										<a class="btn btn-primary" role="button" data-toggle="popover" data-placement="right" data-html="true" data-trigger="hover" title="订单详情" data-content="客户锁牌: 0004 &lt;br&gt;&lt;br&gt;服务项目:小钟推油&lt;br&gt;技师信息:0880(男)Dellx&lt;br&gt;房间号码:0123&lt;br&gt;开始时间:2015/09/17 11:43&lt;br&gt;预计结束:2015/09/17 13:23&lt;br&gt;">查看</a>
+									</td>
+									<td class="td_center">已使用</td>
+								</tr>
+							</table>
+						</div>
+						<div id="YiGuoQi" class="tab-pane">
+							<div class="box_user_img">
+								<span>微信：</span>
+								<div class="box_img">
+									<img src="../img/3.jpg" alt="" />
+								</div>
+							</div>
+							<div class="tab_title">0002号锁牌已过期卡券</div>
+							<table class="table table-bordered CanUse_table">
+								<tr class="table_title">
+									<td>序号</td>
+									<td>卡券号</td>
+									<td>优惠项目</td>
+									<td>金额</td>
+									<td>使用时间</td>
+									<td>使用规则</td>
+									<td>操作</td>
+								</tr>
+								<tr class="tr_project">
+									<td class="td_center">1</td>
+									<td class="td_center">15485121</td>
+									<td class="td_center">泰式按摩</td>
+									<td class="td_center">50元</td>
+									<td class="td_center">
+										2015/09/01~2015/09/20
+									</td>
+									<td>
+										<a class="btn btn-primary" role="button" data-toggle="popover" data-placement="right" data-html="true" data-trigger="hover" title="订单详情" data-content="客户锁牌: 0004 &lt;br&gt;&lt;br&gt;服务项目:小钟推油&lt;br&gt;技师信息:0880(男)Dellx&lt;br&gt;房间号码:0123&lt;br&gt;开始时间:2015/09/17 11:43&lt;br&gt;预计结束:2015/09/17 13:23&lt;br&gt;">查看</a>
+									</td>
+									<td class="td_center">已过期</td>
+								</tr>
+								
+								<tr class="tr_project">
+									<td class="td_center">1</td>
+									<td class="td_center">15485121</td>
+									<td class="td_center">泰式按摩</td>
+									<td class="td_center">50元</td>
+									<td class="td_center">
+										2015/09/01~2015/09/20
+									</td>
+									<td>
+										<a class="btn btn-primary" role="button" data-toggle="popover" data-placement="right" data-html="true" data-trigger="hover" title="订单详情" data-content="客户锁牌: 0004 &lt;br&gt;&lt;br&gt;服务项目:小钟推油&lt;br&gt;技师信息:0880(男)Dellx&lt;br&gt;房间号码:0123&lt;br&gt;开始时间:2015/09/17 11:43&lt;br&gt;预计结束:2015/09/17 13:23&lt;br&gt;">查看</a>
+									</td>
+									<td class="td_center">已过期</td>
+								</tr>
+								<tr class="tr_project">
+									<td class="td_center">1</td>
+									<td class="td_center">15485121</td>
+									<td class="td_center">泰式按摩</td>
+									<td class="td_center">50元</td>
+									<td class="td_center">
+										2015/09/01~2015/09/20
+									</td>
+									<td>
+										<a class="btn btn-primary" role="button" data-toggle="popover" data-placement="right" data-html="true" data-trigger="hover" title="订单详情" data-content="客户锁牌: 0004 &lt;br&gt;&lt;br&gt;服务项目:小钟推油&lt;br&gt;技师信息:0880(男)Dellx&lt;br&gt;房间号码:0123&lt;br&gt;开始时间:2015/09/17 11:43&lt;br&gt;预计结束:2015/09/17 13:23&lt;br&gt;">查看</a>
+									</td>
+									<td class="td_center">已过期</td>
+								</tr>
+								<tr class="tr_project">
+									<td class="td_center">1</td>
+									<td class="td_center">15485121</td>
+									<td class="td_center">泰式按摩</td>
+									<td class="td_center">50元</td>
+									<td class="td_center">
+										2015/09/01~2015/09/20
+									</td>
+									<td>
+										<a class="btn btn-primary" role="button" data-toggle="popover" data-placement="right" data-html="true" data-trigger="hover" title="订单详情" data-content="客户锁牌: 0004 &lt;br&gt;&lt;br&gt;服务项目:小钟推油&lt;br&gt;技师信息:0880(男)Dellx&lt;br&gt;房间号码:0123&lt;br&gt;开始时间:2015/09/17 11:43&lt;br&gt;预计结束:2015/09/17 13:23&lt;br&gt;">查看</a>
+									</td>
+									<td class="td_center">已过期</td>
+								</tr>
+								
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$('[data-toggle="popover"]').popover();
+			})
+		</script>
+	</body>
+</html>

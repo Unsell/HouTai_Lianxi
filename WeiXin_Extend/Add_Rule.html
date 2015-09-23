@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.js"></script>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/Add_Rule.css"/>
+		<title>添加现场代金券规则</title>
+	</head>
+	<body>
+		<div class="content_addRule">
+			<div class="addRule_title">添加新的现场代金券规则</div>
+			<form class="rule_form" action="">
+				<div class="form_title">名称</div>
+				<div class="form-group">
+					<input type="text" class="form-control input-lg" id="" placeholder="请输入名称">
+				</div>
+				<div class="form_title">触发项目</div>
+			    <div class="rule_project">
+			    	<select class="form-control  input-lg select_type_left">
+				    	<option value="">请选择工种</option>
+				    	<option value="">大厅</option>
+				    	<option value="">房间</option>
+				    </select>
+				    <select class="form-control input-lg select_type_right">
+				    	<option value="">请选择项目</option>
+				    	<option value="">按摩</option>
+				    	<option value="">足浴</option>
+				    </select>
+			    </div>
+				<div class="form_title">适用人群</div>
+			    <select class="form-control  input-lg marginBott">
+			    	<option value="">请选择一项</option>
+			    	<option value="">男宾锁牌</option>
+			    	<option value="">女宾锁牌</option>
+			    	<option value="">综合锁牌</option>
+			    </select>
+				<!--<a class="btn btn_Setting">设置代金券</a>-->
+				<!--设置后代金券规则显示-->
+				<div class="box_titleRule">
+					<div class="form_title">设置代金券</div>
+					<button class="btn btn_SettingRule" type="button">设置</button>
+				</div>
+				<div class="div_rule">
+					1.2324234<br />
+					2.2324234<br />
+					1.2324234<br />
+					2.2324234<br />
+					1.2324234<br />
+					2.2324234<br />
+					3.2324234
+				</div>
+				<div class="form_title">使用规则说明</div>
+				<textarea class="form-control textarea_type"></textarea>
+				<div class="form_title">是否开启此功能</div>
+				<label class="radio-inline">
+					<input type="radio" name="open_state" id="" value="option1" checked="">开启
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="open_state" id="" value="option2">禁用
+				</label>
+				<div class="form_title">优惠状态</div>
+				<label class="radio-inline">
+					<input type="radio" name="Preferential_state" id="" value="option1" checked=""><span role="button" data-toggle="popover" data-placement="right" data-html="true" data-trigger="hover" title="随机推送" data-content="系统随机推送您选择的优惠项目中的一个!">随机推送</span>
+				</label>
+				<label class="radio-inline ">
+					<input type="radio" name="Preferential_state" id="" value="option2"><span role="button" data-toggle="popover" data-placement="right" data-html="true" data-trigger="hover" title="全部推送" data-content="系统将推送您选择的 全部优惠项目!">全部推送</span>
+				</label>
+				<div class="box_btn">
+					<button class="btn btn_return" type="button">返回</button>
+					<button class="btn btn_confirm" type="submit">确定</button>
+				</div>
+			</form>
+		</div>
+		<!--弹窗---设置代金券-->
+		<div class="Popup_Vouchers">
+			<div class="Setting_Vouchers">
+				<div class="Setting_title">设置代金券</div>
+				<div class="Setting_subtitle">优惠项目选址</div>
+				<div class="box_Project">
+					<div class="type_Project">
+						<select class="form-control  input-lg select_type">
+					    	<option value="">请选择工种</option>
+					    	<option value="">大厅</option>
+					    	<option value="">房间</option>
+					    </select>
+					    <select class="form-control input-lg select_type">
+					    	<option value="">请选择项目</option>
+					    	<option value="">按摩</option>
+					    	<option value="">足浴</option>
+					    </select>
+					    <div class="money">
+					    	<div class="form-group">
+								<input type="text" class="form-control input-lg input_money" id="" placeholder="请输入优惠金额">
+							</div>
+							<span>元</span>
+					    </div>
+					    <span class="Add_Project">+</span>
+					    
+					</div>
+					<div class="type_Project">
+						<select class="form-control  input-lg select_type">
+					    	<option value="">请选择工种</option>
+					    	<option value="">大厅</option>
+					    	<option value="">房间</option>
+					    </select>
+					    <select class="form-control input-lg select_type">
+					    	<option value="">请选择项目</option>
+					    	<option value="">按摩</option>
+					    	<option value="">足浴</option>
+					    </select>
+					    <div class="money">
+					    	<div class="form-group">
+								<input type="text" class="form-control input-lg input_money" id="" placeholder="请输入优惠金额">
+							</div>
+							<span>元</span>
+					    </div>
+					    <span class="Delete_Project">-</span>
+					</div>
+					
+				</div>
+				<div class="box_btn_Vouchers">
+					<button class="btn btn_return colse_Popup" type="button">返回</button>
+					<button class="btn btn_confirm" type="submit">完成</button>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function () {
+				//bootstrap 右边显示
+				$('[data-toggle="popover"]').popover();
+			  
+				//增加优惠项目
+				var str = '<div class="type_Project">'+
+						'<select class="form-control  input-lg select_type">'+
+					    	'<option value="">请选择工种</option>'+
+					    	'<option value="">大厅</option>'+
+					    	'<option value="">房间</option>'+
+					    '</select>'+
+					    '<select class="form-control input-lg select_type">'+
+					    	'<option value="">请选择项目</option>'+
+					    	'<option value="">按摩</option>'+
+					    	'<option value="">足浴</option>'+
+					    '</select>'+
+					    '<div class="money">'+
+					    	'<div class="form-group">'+
+								'<input type="text" class="form-control input-lg input_money" id="" placeholder="请输入优惠金额">'+
+							'</div>'+
+							'<span>元</span>'+
+					    '</div>'+
+					    '<span class="Delete_Project">-</span>'+
+					'</div>';
+				$('.Add_Project').click(function(){
+					$('.type_Project').last().after(str);
+				})
+			  	//删除优惠项目
+				$('.box_Project').on('click','.Delete_Project',function(){
+			  		$(this).parent().remove();
+				})
+				//关闭弹窗
+				$('.colse_Popup').click(function(){
+					$('.Popup_Vouchers').hide();
+				})
+				//打开弹窗
+				$('.btn_Setting,.btn_SettingRule').click(function(){
+					$('.Popup_Vouchers').show();
+				})
+			})
+		</script>
+	</body>
+</html>

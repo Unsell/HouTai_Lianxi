@@ -1,0 +1,196 @@
+
+.content_addRule{
+	width: 43%;
+	margin: 30px auto 40px;
+}
+.addRule_title{
+	font-size: 26px;
+	text-align: center;
+	color: #363333;
+	letter-spacing: 1px;
+	padding-bottom: 5px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #999999;
+}
+.rule_form{
+	width: 85%;
+	margin: 0 auto;
+}
+.form_title{
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+.rule_project{
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.select_type_left{
+	width: 49%;
+	float: left;
+}
+.select_type_right{
+	width: 49%;
+	float: right;
+}
+.marginBott{
+	margin-bottom: 15px;
+}
+.btn_Setting{
+	width: 100%;
+	height: 46px;
+	color: #333333;
+	font-size: 19px;
+	line-height: 30px;
+	margin-bottom: 15px;
+	text-decoration: underline;
+	background: #E6E6E6;
+}
+.textarea_type{
+	width: 100%;
+	height: 120px !important;
+	resize: none;
+	margin-bottom: 15px;
+}
+.radio-inline{
+	color: #4D4D4D;
+	font-size: 17px;
+	width: 120px;
+	margin: 8px 0 15px;
+}
+.box_btn{
+	width: 100%;
+	margin: 30px auto 0;
+}
+.box_btn .btn_return{
+	width: 49%;
+	background: #614640;
+	color: white;
+	font-size: 17px;
+	padding: 8px 15px;
+	letter-spacing: 1px;
+}
+.box_btn .btn_confirm{
+	width: 49%;
+	background: #009933;
+	color: white;
+	font-size: 17px;
+	padding: 8px 15px;
+	letter-spacing: 1px;
+}
+/*设置后代金券规则显示*/
+.box_titleRule{
+	margin: 10px 0;
+}
+.box_titleRule .form_title{
+	display: inline-block;
+}
+.box_titleRule .btn_SettingRule{
+	width: 100px;
+	font-size: 17px;
+	margin-left: 20px;
+	background: #99CC99;
+}
+.div_rule{
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	padding: 15px 12px;
+	margin-bottom: 15px;
+}
+.popover{
+	width: 150px;
+}
+
+/*弹窗---设置代金券*/
+.Popup_Vouchers{
+	-webkit-user-select: none;
+  	display: none;
+  	position: fixed;
+  	width: 100%;
+  	height: 100%;
+  	background: rgba(0,0,0,0.85);
+  	top: 0;
+  	left: 0;
+  	z-index: 105;
+}
+.Setting_Vouchers{
+	width: 60%;
+	padding: 30px 5%;
+	text-align: center;
+	background: white;
+	border-radius: 4px;
+	position: absolute;
+	top: 10%;
+	left: 20%;
+}
+.Setting_title{
+	font-size: 26px;
+	text-align: center;
+	color: #363333;
+	width: 90%;
+	letter-spacing: 1px;
+	padding-bottom: 5px;
+	margin: 0 auto 30px;
+	border-bottom: 1px solid #999999;
+}
+.Setting_subtitle{
+	margin: 20px 0;
+	text-align: left;
+	font-size: 18px;
+	color: #363333;
+}
+.box_Project{
+	overflow-y: auto;
+	height: 230px;
+}
+.type_Project{
+	text-align: left;
+	color: #4D4D4D;
+	position: relative;
+}
+.type_Project .select_type{
+	width: 30%;
+	display: inline-block;
+}
+.type_Project .money{
+	width: 30%;
+	display: inline-block;
+	position: relative;
+}
+.type_Project .money span{
+	position: absolute;
+	right: 5%;
+	bottom: 27px;
+}
+.type_Project .money .form-group .input_money{
+	text-align: center;
+}
+.Add_Project,.Delete_Project{
+	font-size: 50px;
+	position: absolute;
+	right: 3%;
+	top: -12px;
+	cursor: pointer;
+}
+.Delete_Project{
+	right: 4%;
+}
+.box_btn_Vouchers{
+	width: 70%;
+	margin: 20px auto 0;
+}
+.box_btn_Vouchers .btn_return{
+	width: 45%;
+	background: #614640;
+	color: white;
+	font-size: 17px;
+	padding: 10px 15px;
+	letter-spacing: 1px;
+}
+.box_btn_Vouchers .btn_confirm{
+	width: 45%;
+	background: #009933;
+	color: white;
+	font-size: 17px;
+	padding: 10px 15px;
+	letter-spacing: 1px;
+}

@@ -1,0 +1,115 @@
+
+.content{
+	width: 95%;
+	margin: 10px 2% 0 3%;
+}
+.culb_title {
+  position: relative;
+  color: #328CCE;
+  font-size: 22px;
+  height: 34px;
+  line-height: 34px;
+  border-bottom: 1px solid #D5E3EF;
+}
+.box_tips{
+	margin: 30px 0 0;
+	padding: 20px 0 0 8%;
+	border: 1px solid #CCCCCC;
+}
+.tips_text{
+	margin-bottom: 35px;
+}
+.tips_title{
+	color: #363333;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.tips_content{
+	color: #524E4E;
+	font-size: 17px;
+	margin-left: 5px;
+}
+.box_rule{
+	margin: 20px 0 0;
+	padding: 25px 0 25px 8%;
+	border: 1px solid #CCCCCC;
+	overflow: hidden;
+}
+.box_rule span{
+	display: inline-block;
+	margin-top: 4px;
+}
+.rule_title{
+	color: #363333;
+	font-size: 20px;
+}
+.btn_addRule{
+	padding: 8px 15px;
+	color: white;
+	letter-spacing: 1px;
+	float: right;
+	margin-right: 8%;
+	background: #20A15C;
+}
+.rule_table{
+	text-align: center;
+	color: #4D4D4D;
+	font-size: 17px;
+}
+.rule_table tr td .btn-primary{
+	background: #1B82F1;
+}
+.table_title{
+	font-size: 19px;
+}
+.td_center{
+	padding-top: 13px !important;
+}
+
+.a_Disable{
+	display: inline-block;
+	width: 60px;
+	color: #1B82F1;
+	text-decoration: underline;
+	border-right: 1px solid #666666;
+}
+.a_Delete{
+	display: inline-block;
+	width: 60px;
+	color: #1B82F1;
+	text-decoration: underline;
+}
+/*隐藏多余*/
+.more_discount{
+	display: none;
+}
+.td_Discount{
+	text-align: left;
+	padding-left: 5% !important;
+}
+ .project_name{
+	display: inline-block;
+	text-align: left;
+	padding-top: 10px;
+	width: 35%;
+	margin-right: 5%;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	white-space:nowrap;
+}
+ .project_num{
+	display: inline-block;
+	text-align: left;
+	padding-top: 10px;
+	width: 30%;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.btn_more{
+	
+	display: inline-block;
+	margin-top: -10px;
+}

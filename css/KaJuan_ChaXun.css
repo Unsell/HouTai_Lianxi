@@ -1,0 +1,136 @@
+
+.content_Voucher_Query{
+	text-align: center;
+	padding-bottom: 70px;
+}
+.box_Query{
+	margin: 80px auto 60px;
+	width: 50%;
+	overflow: hidden;
+}
+.box_Query .form-group {
+   margin-bottom: 0; 
+}
+.input_Menber{
+	width: 70%;
+	height: 50px;
+  	padding: 10px 16px;
+  	font-size: 18px;
+	float: left;
+	border-radius: 3px;
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+	-webkit-border-top-right-radius:0
+}
+.btn_search{
+	width: 30%;
+	height: 50px;
+	float: left;
+	font-size: 18px;
+	color: white;
+	background: #009933;
+	letter-spacing: 3px;
+	border-radius: 3px;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+	-webkit-border-bottom-left-radius: 0;
+	-webkit-border-top-left-radius:0
+}
+.tips{
+	color: #AB2020;
+}
+.box_result{
+	width: 100%;
+	padding-top: 40px;
+	border-top: 1px solid #CCCCCC;
+}
+.tabs-below{
+	width: 85%;
+	margin: 0 auto;
+}
+.nav-tabs>li{
+	width: 140px;
+}
+.nav-tabs>li:first-child{
+	margin-left: 33%;
+}
+.nav-tabs>li>a{
+	background: #F1F1F1;
+	color: #808080;
+	font-size: 17px;
+	border: 1px solid #CCCCCC;
+	border-radius: 0;
+	margin-right: 0;
+}
+.tab-content{
+	border: 1px solid #DDDDDD;
+	padding: 16px 12px;
+	position: relative;
+	z-index: 11;
+	border-top: none;
+	margin-bottom: 50px;
+}
+.CanUse_table{
+	color: #4D4D4D;
+}
+/*用户头像*/
+.box_user_img{
+	position: absolute;
+	top: -5px;
+	left: 5%;
+}
+.box_user_img .box_img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: inline-block;
+}
+.box_user_img .box_img img{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.tab_title{
+	
+	font-size: 30px;
+	margin: 15px auto;
+}
+.table_title{
+	font-size: 19px;
+}
+.td_center{
+	vertical-align: middle !important;
+}
+.td_center label{
+	margin-top: 5px;
+}
+.tr_project{
+	font-size: 17px;
+}
+.tr_project td{
+	padding: 15px 10px !important;
+}
+.btn-primary{
+	padding: 4px 12px;
+	background: #1B82F1;
+	text-align-last: ;
+}
+#KeShiYong,#YiShiYong,#YiGuoQi{
+	position: relative;
+}
+#KeShiYong .btn_confirm{
+	width: 30%;
+	color: white;
+	background: #009933;
+	font-size: 20px;
+	letter-spacing: 5px;
+	padding: 10px 15px;
+	margin: 0 35% -180px !important;
+}
+
+
+
+
+
+

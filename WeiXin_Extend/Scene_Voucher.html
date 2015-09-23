@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.js"></script>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/Scene_Voucher.css"/>
+		<title>现场代金券</title>
+	</head>
+	<body>
+		<div class="content">
+			<h3 class="culb_title">微信推广---现场代金券</h3>
+			<div class="box_tips">
+				<div class="tips_text">
+					<div class="tips_title">【触发条件】</div>
+					<div class="tips_content">当客户完成某项目之后（以下钟操作为准），系统自动发放此代金券到客户会员中心内。</div>
+				</div>
+				<div class="tips_text">
+					<div class="tips_title">【客户使用条件】</div>
+					<div class="tips_content">客户要使用必须是在离场前，出场（锁牌解绑）既自动失效。</div>
+				</div>
+			</div>
+			<div class="box_rule">
+				<div class="rule_title">
+					<span>【当前规则】</span>
+					<button type="button" class="btn btn_addRule">添加一个规则</button>
+				</div>
+			</div>
+			<table class="table table-bordered rule_table">
+				<tr class="table_title">
+					<td>序号</td>
+					<td>名称</td>
+					<td>适用人群</td>
+					<td>触发项目</td>
+					<td>优惠项目</td>
+					<td>优惠状态</td>
+					<td>使用规则</td>
+					<td>操作</td>
+				</tr>
+				<tr class="tr_rule">
+					<td class="td_center">1</td>
+					<td class="td_center">优惠1</td>
+					<td class="td_center">女宾锁牌</td>
+					<td class="td_center">中式按摩</td>
+					<td class="td_Discount">
+						<span class="project_name">日式asdasdasdasdasd按摩</span><span class="project_num">代金券&nbsp;￥50</span>
+						<a class="btn btn-primary btn_more">更多</a>
+						<div class="more_discount">
+							<span class="project_name">日式按摩</span><span class="project_num">代金券&nbsp;￥50</span><br />
+							<span class="project_name">日式按摩</span><span class="project_num">代金券&nbsp;￥50</span><br />
+							<span class="project_name">日式按摩</span><span class="project_num">代金券&nbsp;￥50</span><br />
+						</div>
+					</td>
+					<td class="td_center">随机</td>
+					<td>
+						<a class="btn btn-primary" role="button" data-toggle="popover" data-placement="right" data-html="true" data-trigger="hover" title="订单详情" data-content="客户锁牌: 0004 &lt;br&gt;&lt;br&gt;服务项目:小钟推油&lt;br&gt;技师信息:0880(男)Dellx&lt;br&gt;房间号码:0123&lt;br&gt;开始时间:2015/09/17 11:43&lt;br&gt;预计结束:2015/09/17 13:23&lt;br&gt;">查看</a>
+					</td>
+					<td class="td_center">
+						<a class="a_Disable" href="">禁用</a>
+						<a class="a_Delete" href="">删除</a>
+					</td>
+				</tr>
+				<tr class="tr_rule">
+					<td class="td_center">2</td>
+					<td class="td_center">优惠1</td>
+					<td class="td_center">女宾锁牌</td>
+					<td class="td_center">中式按摩</td>
+					<td class="td_Discount">
+						<span class="project_name">日式asdasdasdasdasd按摩</span><span class="project_num">代金券&nbsp;￥50</span>
+						<a class="btn btn-primary btn_more">更多</a>
+						<div class="more_discount">
+							<span class="project_name">日式按摩</span><span class="project_num">代金券&nbsp;￥50</span><br />
+							<span class="project_name">日式按摩</span><span class="project_num">代金券&nbsp;￥50</span><br />
+							<span class="project_name">日式按摩</span><span class="project_num">代金券&nbsp;￥50</span><br />
+						</div>
+					</td>
+					<td class="td_center">随机</td>
+					<td>
+						<a class="btn btn-primary" role="button" data-toggle="popover" data-placement="right" data-html="true" data-trigger="hover" title="订单详情" data-content="客户锁牌: 0004 &lt;br&gt;&lt;br&gt;服务项目:小钟推油&lt;br&gt;技师信息:0880(男)Dellx&lt;br&gt;房间号码:0123&lt;br&gt;开始时间:2015/09/17 11:43&lt;br&gt;预计结束:2015/09/17 13:23&lt;br&gt;">查看</a>
+					</td>
+					<td class="td_center">
+						<a class="a_Disable" href="">禁用</a>
+						<a class="a_Delete" href="">删除</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<script type="text/javascript">
+			$(function () {
+			  $('[data-toggle="popover"]').popover();
+			  //显示隐藏的优惠项目
+			  $('.rule_table').on('click','.btn_more',function(){
+			  	$(this).next().toggle()
+			  	if($(this).next().css('display') == 'block'){
+			  		$(this).html('收起')
+			  	}else(
+			  		$(this).html('更多')
+			  	)
+			  	
+			  })
+			  
+			})
+		</script>
+	</body>
+</html>

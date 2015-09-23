@@ -1,0 +1,59 @@
+
+.content_extend{
+	width: 90%;
+	margin: 0 auto;	
+	text-align: center;
+}
+.Explain_title{
+	font-size: 28px;
+	margin-top: 30px;
+}
+.Function_table{
+	width: 90%;
+	margin: 30px auto;
+	color: #4D4D4D;
+	font-size: 16px;
+}
+
+.table_title{
+	font-size: 19px;
+}
+.red{
+	color: red;
+}
+.number_1,.number_2{
+	vertical-align: middle !important;
+}
+.Function_name_1,.Function_name_2{
+	font-size: 23px;
+	padding-top: 25px !important;
+}
+.Details_1,.Details_2{
+	padding: 23px 5px 0 5%  !important;
+	text-align: left;
+	
+}
+.Operation_1,.Operation_2{
+	font-size: 17px;
+	width: 10%;
+	text-decoration: underline;
+	color: #1B82F1;
+	padding-top: 30px !important;
+}
+.Efficiency_1,.Efficiency_2{
+	text-align: left;
+	padding-left: 5% !important;
+}	
+
+.Function_name_2{
+	padding-top: 15px !important;
+}
+.Details_2{
+	padding: 13px 5px 0 5%  !important;
+	
+}
+.Operation_2{
+	padding-top: 20px !important;
+}
+
+

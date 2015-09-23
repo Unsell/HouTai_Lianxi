@@ -1,0 +1,100 @@
+
+.content_Check_Card{
+	width: 95%;
+	margin: 10px 2% 0 3%;
+}
+.culb_title {
+  position: relative;
+  color: #328CCE;
+  font-size: 22px;
+  height: 34px;
+  line-height: 34px;
+  border-bottom: 1px solid #D5E3EF;
+}
+
+.box_SearchTime{
+	text-align: center;
+	width: 65%;
+	margin: 40px auto;
+}
+.box_SearchTime .form-inline .form-group input{
+	text-align: center;
+	height: 42px;
+	line-height: 42px;
+}
+.box_SearchTime .form-inline span{
+	color: #D8D8D8;
+}
+.box_SearchTime .form-inline .btn_SearchTime{
+	background: #009933;
+	width: 150px;
+	height: 42px;
+	color: white;
+	font-size: 20px;
+	letter-spacing: 2px;
+	margin-left: 5px;
+}
+.ResultCheck_table{
+	text-align: center;
+	color: #4D4D4D;
+	width: 92%;
+	margin: 0 auto;
+}
+.Ruselt_title td{
+	font-size: 24px;
+	padding: 15px 8px !important;
+}
+.table_tr_title td{
+	padding: 10px 8px !important;
+	font-size: 16px;
+}
+.table_tr_content td{
+	font-size: 14px;
+	vertical-align: middle !important;
+}
+.ResultCheck_table .table_tr_content td{
+	padding: 15px 10px !important;
+}
+.A_More{
+	color: #1B82F1;
+	text-decoration: underline;
+}
+.btn_Print{
+	width: 100px;
+	padding: 3px 10px;
+	margin: 20px 0 0 5%;
+	border-radius: 2px;
+	color: #808080;
+	background: #E6E6E6;
+	border-color: #D0D0D0;
+}
+
+/*详细*/
+.box_Detailed{
+	margin-top: 40px;
+}
+.box_Operation{
+	overflow:hidden;
+	margin-bottom: 5px;
+}
+.btn_Return_Table{
+	width: 100px;
+	padding: 3px 10px;
+	margin: 20px 0 0 4%;
+	border-radius: 2px;
+	color: white;
+	background: #009933;
+}
+.Total{
+	font-size: 20px;
+	float: right;
+	margin: 23px 5% 0 0;
+}
+.table_tr_content td img{
+	border-radius: 50%;
+}
+
+
+
+
+

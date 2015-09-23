@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.js"></script>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/WiFi_page.css"/>
+		<title>WIFI设置</title>
+	</head>
+	<body>
+		<div class="WiFi_content">
+			<h3 class="culb_title">WIFI设置
+				<span class="btn c_t_right btn_add_WIFI">添加</span>
+			</h3>
+			<div class="tips_wifi">请将店内所有可用密码添加到此。WIFI密码将在客户扫描锁牌后自动告知客户，从此告别客户询问。</div>
+			<table class="table table-bordered WIFI_table">
+				<tr class="table_heard">
+					<td>序号</td>
+					<td>WIFI名称</td>
+					<td>WIFI密码</td>
+					<!--<td>密码链接</td>-->
+					<td>操作</td>
+				</tr>
+				<tr class="table_content">
+					<td>1</td>
+					<td>GKD1</td>
+					<td>1111111</td>
+					<!--<td><a >http://www.baidu.com</a></td>-->
+					<td>
+						<a class="type_a" href="">修改</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+						<a class="type_a" href="">删除</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!--弹窗---添加/修改-->
+		<div class="Popup_WIFI">
+			<div class="box_add_WIFI">
+				<div class="box_title">添加</div>
+				<form class="form-horizontal" action="">
+					<div class="form-group">
+					    <label for="" class="col-sm-4 control-label">WIFI名称</label>
+					    <div class="col-sm-7">
+					    	<input type="text" class="form-control input-lg" id="" placeholder="">
+					    </div>
+					</div>
+					<div class="form-group">
+					    <label for="" class="col-sm-4 control-label">WIFI密码</label>
+					    <div class="col-sm-7">
+					    	<input type="text" class="form-control input-lg" id="" placeholder="">
+					    </div>
+					</div>
+					<!--<div class="form-group">
+					    <label for="" class="col-sm-4 control-label">密码链接</label>
+					    <div class="col-sm-7">
+					    	<input type="text" class="form-control input-lg" id="" placeholder="">
+					    </div>
+					</div>-->
+					<div class="box_button">
+						<button type="button" class="btn cancle_WIFI">返回</button>
+						<button type="submit" class="btn confirm_WIFI">完成</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$('.btn_add_WIFI').click(function(){
+					$('.Popup_WIFI').show();
+				})
+				$('.cancle_WIFI').click(function(){
+					$('.Popup_WIFI').hide();
+				})
+			})
+		</script>
+	</body>
+</html>
