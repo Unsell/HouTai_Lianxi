@@ -1,0 +1,257 @@
+
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.content{
+	width: 96%;
+	margin: 10px auto;
+}
+.culb_title {
+    position: relative;
+    color: #328CCE;
+    font-size: 22px;
+    height: 38px;
+     line-height: 38px; 
+    border-bottom: 1px solid #D5E3EF;
+}
+/*搜索框*/
+.Search_center {
+    width: 370px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.search_box {
+    position: relative;
+    margin: 25px auto;
+}
+.Search_center .Input_Center {
+    width: 250px;
+    float: left;
+}
+.Search_center .Input_Center input {
+    height: 36px;
+    width: 100%;
+    margin: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -webkit-border-top-right-radius: 0;
+}
+.Search_center .Search {
+    width: 120px;
+    height: 36px !important;
+    border: none;
+    background: #41B075;
+    color: white;
+    font-size: 16px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-top-left-radius: 0;
+    margin-left: -5px;
+}
+.box_btn_addTechnician{
+	float: right;
+	margin: 0 10px 8px 0;
+}
+.box_btn_addTechnician .btn_addTechnician{
+	border: none;
+	background: #1378D1;
+	width: 120px;
+	color: white;
+	text-align: center;
+	letter-spacing: 1px;
+}
+/*表格*/
+.ShowTechnician_table{
+	margin-bottom: 0;
+}
+.ShowTechnician_table th,.ShowTechnician_table td{
+	text-align: center;
+	vertical-align: middle !important;
+	color: #585858;
+}
+.ShowTechnician_table th{
+	font-size: 16px;
+	font-weight: 500;
+	    background: #F9F9F9;
+}
+.check_all{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.ShowTechnician_table tr .type_a{
+	width: 32px;
+	color: #3A7EB9;
+	display: inline-block !important;
+	text-align: center;
+	cursor: pointer;
+}
+.box_btn_deleteTechnician{
+	margin: 8px 0 20px 10px;
+}
+.box_btn_deleteTechnician .btn_deleteTechnician{
+	border: none;
+	background: #1378D1;
+	width: 120px;
+	color: white;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+/*弹窗---添加技师*/
+.Popup_addTechnician,.Popup_BatchAddTechnician {
+    -webkit-user-select: none;
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    background-repeat: repeat-x;
+    top: 0;
+    left: 0;
+    z-index: 105;
+}
+.box_addTechnician,.box_BatchAddTechnician {
+    width: 35%;
+    background: white;
+    margin: 8% auto 0;
+    border-radius: 3px;
+    padding: 30px 20px 10px;
+    color: #666666;
+}
+
+.box_title {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    color: #666666;
+    font-size: 24px;
+    border-bottom: 2px solid #E4E3E3;
+}
+.form_addTechnician{
+	width: 85%;
+    margin: 20px auto;
+}
+.form_addTechnician .form-group{
+	margin-bottom: 10px;
+}
+.form_addTechnician .form-group .col-sm-10 select {
+	color: #999999; 
+}
+.form_addTechnician .control-label{
+	font-size: 20px;
+	font-weight: 500;
+	color: #666666;
+	padding: 2px 10px 0 15px;
+}
+.form_addTechnician .form-group .form-control{
+	border-radius: 0;
+	border-color: #D4C7B4;
+}
+
+.tip_password{
+	color: red;
+	font-size: 16px;
+	letter-spacing: 1px;
+	margin-left: 10px;
+}
+.box_addTechnician .box_button {
+    margin-top: 15px;
+    text-align: center;
+}
+.box_addTechnician .box_button button {
+    width: 48%;
+}
+
+.confirm_addTechnician, .confirm_BatchAddTechnician {
+    padding: 8px 12px;
+    font-size: 16px;
+    color: white;
+    border-radius: 1px;
+    background: #13C45A;
+}
+.cancle_addTechnician ,.cancle_BatchAddTechnician{
+	padding: 8px 12px;
+    font-size: 16px;
+    color: #807676;
+    border-radius: 1px;
+}
+/*弹窗---批量添加技师*/
+.box_BatchAddTechnician .box_title{
+	width: 78%;
+}
+.box_tips_content{
+	margin: 15px auto 30px;
+	padding: 18px 10px 10px 20px;
+	width: 85%;
+	background: #F7F0E8;
+}
+
+.box_tips_content .Example_Picture{
+	float: left;
+}
+.box_tips_content .tips_content{
+	float: left;
+	padding-left: 8px;
+	font-size: 13px;
+}
+.box_tips_content .box_btnDownLoad{
+	float: left;
+	margin-top: 5px;
+	padding-left: 12px;
+}
+.box_tips_content .box_btnDownLoad .btn_downLoadFile{
+	
+	padding: 3px 12px;
+    font-size: 13px;
+    color: white;
+    border-radius: 1px;
+    background: #6699FF;
+}
+.box_BatchAddTechnician .Search_center{
+	width: 85%;
+	margin: 35px auto 20px;
+	position: relative;
+}
+.box_BatchAddTechnician .Search_center .Input_Center{
+	width: 70%;
+}
+.box_BatchAddTechnician .Search_center .Input_Center input{
+	border-color: #D3C5B2;
+	border-radius: 0;
+}
+.box_BatchAddTechnician .Search_center .ChooseFile{
+	position: absolute;
+	right: 5px;
+	top: 0;
+	height: 36px;
+	width: 30%;
+	z-index: 10;
+	cursor: pointer;
+	opacity: 0;
+}
+.box_BatchAddTechnician .Search_center .Search{
+	width: 30%;
+	letter-spacing: 5px;
+	border: 1px solid #D3C5B2;
+	color: #666666;
+	background: #F7EFE6;
+	border-radius: 0;
+}
+.box_BatchAddTechnician .box_button{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.box_BatchAddTechnician .box_button button{
+	width: 42%;
+	
+}

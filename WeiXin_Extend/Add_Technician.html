@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.js"></script>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/Add_Technician.css"/>
+		<title>添加技师</title>
+	</head>
+	<body>
+		<div class="content">
+			<h3 class="culb_title">添加技师</h3>
+			<div class="search_box Search_center">
+				<form action="" method="get" id="">
+					<div class="form-group Input_Center">
+					   <input name="name" id="search" type="text" class="form-control" placeholder="请技师工号" required="">
+					</div>
+					<input type="submit" class="btn Search" value="搜索">
+				</form>
+			</div>
+			<div class="show_Technician">
+				<div class="box_btn_addTechnician clearfix">
+					<button type="button" class="btn btn_addTechnician AddTechnician_Batch">批量添加技师</button>
+					<button type="button" class="btn btn_addTechnician AddTechnician_single">添加单个技师</button>
+				</div>
+				<table class="table table-hover table-bordered ShowTechnician_table">
+					
+					<tr>
+						<th><div class="check_all">全选</div></th>
+						<th>工号</th>
+						<th>姓名</th>
+						<th>性别</th>
+						<th>手机</th>
+						<th>工龄</th>
+						<th>操作</th>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="" class="ck_en" value="368"></td>
+						<td>00000001</td>
+						<td>Lucy</td>
+						<td>女</td>
+						<td>13689476432</td>
+						<td>3年</td>
+						<td>
+							<a class="type_a" href="">修改</a> | 
+							<a class="type_a">头像</a> | 
+							<a class="type_a">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="" class="ck_en" value="368"></td>
+						<td>00000001</td>
+						<td>Lucy</td>
+						<td>女</td>
+						<td>13689476432</td>
+						<td>3年</td>
+						<td>
+							<a class="type_a" href="">修改</a> | 
+							<a class="type_a">头像</a> | 
+							<a class="type_a">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="" class="ck_en" value="368"></td>
+						<td>00000001</td>
+						<td>Lucy</td>
+						<td>女</td>
+						<td>13689476432</td>
+						<td>3年</td>
+						<td>
+							<a class="type_a" href="">修改</a> | 
+							<a class="type_a">头像</a> | 
+							<a class="type_a">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="" class="ck_en" value="368"></td>
+						<td>00000001</td>
+						<td>Lucy</td>
+						<td>女</td>
+						<td>13689476432</td>
+						<td>3年</td>
+						<td>
+							<a class="type_a" href="">修改</a> | 
+							<a class="type_a">头像</a> | 
+							<a class="type_a">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="" class="ck_en" value="368"></td>
+						<td>00000001</td>
+						<td>Lucy</td>
+						<td>女</td>
+						<td>13689476432</td>
+						<td>3年</td>
+						<td>
+							<a class="type_a" href="">修改</a> | 
+							<a class="type_a">头像</a> | 
+							<a class="type_a">删除</a>
+						</td>
+					</tr>
+				</table>
+				<div class="box_btn_deleteTechnician">
+					<button type="button" class="btn btn_deleteTechnician">批量删除</button>
+					<button type="button" class="btn btn_deleteTechnician">批量修改头像</button>
+				</div>
+			</div>
+		</div>
+		<!--弹窗---添加技师-->
+		<div class="Popup_addTechnician">
+			<div class="box_addTechnician">
+				<div class="box_title">添加单个</div>
+				<form class="form-horizontal form_addTechnician">
+				  <div class="form-group">
+				    <label class="col-sm-2 control-label">工号</label>
+				    <div class="col-sm-10">
+				      <input type="number" class="form-control"  placeholder="请输入工号">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label class="col-sm-2 control-label">姓名</label>
+				    <div class="col-sm-10">
+				      <input type="text" class="form-control" placeholder="请输入姓名">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label class="col-sm-2 control-label">性别</label>
+				    <div class="col-sm-10">
+				      <!--<input type="text"  placeholder="请输入性别">-->
+				      	<select name="" class="form-control" id="">
+				      		<option value="">-请选择性别-</option>
+				      		<option value="">男</option>
+				      		<option value="">女</option>
+				      	</select>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label class="col-sm-2 control-label">手机</label>
+				    <div class="col-sm-10">
+				      <input type="tel" class="form-control" placeholder="请输入手机">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label class="col-sm-2 control-label">工龄</label>
+				    <div class="col-sm-10">
+				      <input type="number" class="form-control" placeholder="请输入工龄">
+				    </div>
+				  </div>
+				  <div class="tip_password">*技师默认密码123456</div>
+				  <div class="box_button">
+						<button class="btn cancle_addTechnician" type="button">取消</button>
+						<button class="btn confirm_addTechnician" type="submit" name="confirm_button">确定</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!--弹窗---批量添加技师-->
+		<div class="Popup_BatchAddTechnician">
+			<div class="box_BatchAddTechnician">
+				<div class="box_title">批量添加</div>
+				<div class="box_tips_content clearfix">
+					<img class="Example_Picture" src="../img/excel.png" alt="" width="82px" />
+					<div class="tips_content">
+						技师批量上传，只支持此表格格式请下载填写。（XXXX.xls）文件
+					</div>
+					<div class="box_btnDownLoad">
+						<button class="btn btn_downLoadFile" type="button">下载文件</button>
+					</div>
+				</div>
+				<form action="" method="get" id="">
+					<div class="search_box Search_center">
+						<div class="form-group Input_Center">
+						   <input name="name" id="ShowFileName" type="text" class="form-control" placeholder="请选择文件" required="">
+						  
+						</div>
+						<input type="button" class="btn Search" value="浏览">
+						<input  id="ChooseFile" type="file" class="form-control ChooseFile"  required="">
+					</div>
+					<div class="box_button">
+						<button class="btn cancle_BatchAddTechnician" type="button">取消</button>
+						<button class="btn confirm_BatchAddTechnician" type="submit" name="confirm_button">上传</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				
+				//选择文件显示文件名
+				$('#ChooseFile').change(function(){
+					var str = $(this).val();
+					var str1 = str.split("\\");
+					var strLength = str1.length-1;
+					var addrStr = str1[strLength];
+					$('#ShowFileName').val(addrStr);
+				})
+				//弹窗操作
+				$('.AddTechnician_Batch').click(function(){
+					$('.Popup_BatchAddTechnician').show();
+					var parentWidth = $('.box_tips_content').width();
+					$('.tips_content').css('width',parentWidth-82);
+					$('.box_btnDownLoad').css('width', $('.tips_content').width());
+				})
+				$('.cancle_BatchAddTechnician').click(function(){
+					$('.Popup_BatchAddTechnician').hide()
+				})
+				
+				$('.AddTechnician_single').click(function(){
+					$('.Popup_addTechnician').show()
+				})
+				$('.cancle_addTechnician').click(function(){
+					$('.Popup_addTechnician').hide()
+				})
+				
+			})
+		</script>
+	</body>
+</html>

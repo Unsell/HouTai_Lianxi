@@ -1,87 +1,54 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-		<!--<script type="text/javascript" src="js/bootstrap.min.js"></script>-->
-		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
-		<link rel="stylesheet" href="index.css" />
-		<style type="text/css">
-			div{
-				font-size: 30px;
-				padding: 40px;
-			}
-		</style>
-	</head>
-	<body>
-		<form action="form" method="get">
-		Date: <input type="datetime-local" name="user_date" required=""/>
-		<input class="btn" type="submit" />
-		</form>
-		i
-		<div id="">dsadasd</div>
-		<div id="">dsadasd</div>
-		<div id="">dsadasd</div>
-		<div id="">dsadasd</div>
-		<div id="">dsadasd</div>
-		<div id="">dsadasd</div>
-		<div id="">dsadasd</div>
-		<div id="">dsadasd</div>
-		<div id="">dsadasd</div>
-		<div id="">dsadasd</div>
-		<div id="">dsadasd</div>
-		<a href="WeiXin.html">阿迪萨斯大时代</a>
-		<div id="">dsadasd</div>
-		<div id="">dsadasd</div>
-		<div id="">dsadasd</div>
-		<div id="">dsadasd</div>
-		<div id="">dsadasd</div>
-		<div id="">dsadasd</div>
-		<div id="">dsadasd</div>
-		<img class="scan_img" src="img/1.jpg" alt="" width="80px" height="80px" />
-		<img class="scan_img" src="img/2.jpg" alt="" width="80px" height="80px" />
-		<img class="scan_img" src="img/3.jpg" alt="" width="80px" height="80px" />
-		<img class="scan_img" src="img/4.jpg" alt="" width="80px" height="80px" />
-		<!--<div class="Enlarge_img">
-			<div class="box_enlarge">
-				<img src="" alt="" />
-				<button class="btn cancle_enlarge">返回</button>
-				<button class="btn comfirm_enlarge">打印</button>
-			</div>
-		</div>-->
-		<script type="text/javascript">
-			$(function(){
-				$('.scan_img').click(function(){
-					var img_url = $(this).attr('src');
-					var str = joint(img_url);
-					$('body').append(str);
-				})
-				$('body').on('click','.Enlarge_img',function(){
-					$(this).remove();
-				})
-				$('body').on('click','.comfirm_enlarge',function(){
-					alert(213);
-				})
-				
-				function joint(img){
-					var str = '<div class="Enlarge_img">'+
-						'<div class="box_enlarge">'+
-							'<img src="'+img+'" alt="" />'+
-							'<button class="btn cancle_enlarge">返回</button>'+
-							'<button class="btn comfirm_enlarge">打印</button>'+
-						'</div>'+
-						
-					'</div>'
-					
-//					'<div class="mui-backdrop">'+
-//					'<div><img src="'+img+'" class="open_big_img"></div>'+
-//					'<button class="stamp">打印</button>'+
-//					'</div>';
-					return str;
-				}
-	
-			})
-		</script>
-	</body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title> 多行文字实现垂直居中 </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <style type="text/css">
+ body { font-size:12px;font-family:tahoma;}
+ div#wrap {
+  display:table;
+  border:1px solid #FF0099;
+  background-color:#FFCCFF;
+  width:760px;
+  height:400px;
+  _position:relative;
+  overflow:hidden;
+ }
+ div#subwrap {
+  vertical-align:middle;
+  display:table-cell;
+  _position:absolute;
+  _top:50%;
+ }
+ div#content { 
+  _position:relative;
+  _top:-50%;
+ }
+  </style>
+ </head>
+ <body>
+ <div id="wrap">
+  <div id="subwrap">
+   <div id="content"><pre>现在我们要使这段文字垂直居中显示！
+ div#wrap {
+  border:1px solid #FF0099;
+  background-color:#FFCCFF;
+  width:760px;
+  height:500px;
+  position:relative;
+ }
+ div#subwrap {
+  position:absolute;
+  border:1px solid #000;
+  top:50%;
+ }
+ div#content {
+  border:1px solid #000;
+  position:relative;
+  top:-50%;
+ }</pre>
+  </div>
+ </div>
+</div>
+ </body>
 </html>

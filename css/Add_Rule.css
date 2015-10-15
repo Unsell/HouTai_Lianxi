@@ -51,11 +51,11 @@
 	resize: none;
 	margin-bottom: 15px;
 }
-.radio-inline{
+.rule_form .radio-inline{
 	color: #4D4D4D;
 	font-size: 17px;
 	width: 120px;
-	margin: 8px 0 15px;
+	margin: 8px 0 15px !important;
 }
 .box_btn{
 	width: 100%;
@@ -95,6 +95,7 @@
 	border-radius: 4px;
 	padding: 15px 12px;
 	margin-bottom: 15px;
+	min-height: 100px;
 }
 .popover{
 	width: 150px;
@@ -137,6 +138,7 @@
 	text-align: left;
 	font-size: 18px;
 	color: #363333;
+	position: relative;
 }
 .box_Project{
 	overflow-y: auto;
@@ -146,25 +148,34 @@
 	text-align: left;
 	color: #4D4D4D;
 	position: relative;
+	overflow: hidden;
 }
 .type_Project .select_type{
 	width: 30%;
-	display: inline-block;
+	float: left;
+	margin-right: 3px;
 }
 .type_Project .money{
 	width: 30%;
-	display: inline-block;
+	float: left;
 	position: relative;
 }
 .type_Project .money span{
 	position: absolute;
-	right: 5%;
+	right: 10px;
 	bottom: 27px;
 }
 .type_Project .money .form-group .input_money{
 	text-align: center;
 }
-.Add_Project,.Delete_Project{
+.Add_Project{
+	font-size: 48px;
+	position: absolute;
+	left: 120px;
+	top: -24px;
+	cursor: pointer;
+}
+.Delete_Project{
 	font-size: 50px;
 	position: absolute;
 	right: 3%;
