@@ -17,8 +17,10 @@
 			}
 			/*.starts ul span{display:inline;float:left;padding-left:10px;height:31px;line-height:31px;}*/
 		</style>
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
 	</head>
 	<body>
+		<input id="input" type="text" value="" />
 		<div class="starts">
 		    <ul id="pingStar1">
 		        <li rel="1" title="特别差，给1分"><span class="mui-icon iconfont icon-xingxingman"></span></li>
@@ -51,6 +53,11 @@
 		    
 		</div>
 		<script type="text/javascript">
+			$(function(){
+				$("#input").change(function(){
+					console.log($("#input").val());
+				})
+			})
 			window.onload = function () {
 			    var s = document.getElementById("pingStar1"),
 			    s2 = document.getElementById("pingStar2"),

@@ -1,54 +1,80 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
- <head>
-  <title> 多行文字实现垂直居中 </title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <title>Document</title>
   <style type="text/css">
- body { font-size:12px;font-family:tahoma;}
- div#wrap {
-  display:table;
-  border:1px solid #FF0099;
-  background-color:#FFCCFF;
-  width:760px;
-  height:400px;
-  _position:relative;
-  overflow:hidden;
- }
- div#subwrap {
-  vertical-align:middle;
-  display:table-cell;
-  _position:absolute;
-  _top:50%;
- }
- div#content { 
-  _position:relative;
-  _top:-50%;
- }
+    .box_Query {
+        margin: 40px auto 30px;
+        width: 40%;
+        overflow: hidden;
+    }
+    .box_Query .form-group {
+    margin-bottom: 0;
+}
+.box_Query .form-group .input_Menber {
+    width: 70% !important;
+    height: 42px;
+    padding: 10px 16px;
+    font-size: 18px;
+    float: left;
+    border-radius: 3px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -webkit-border-top-right-radius: 0;
+     margin: 0 auto 0;
+}
+
+.box_Query .btn_search {
+    width: 30% !important;
+    height: 42px;
+    float: left;
+    font-size: 18px;
+    color: white;
+    background: #009933;
+    letter-spacing: 3px;
+    border-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-top-left-radius: 0;
+}
+.box_Query .btn_search {
+    width: 30% !important;
+    height: 42px;
+    float: left;
+    font-size: 18px;
+    color: white;
+    background: #009933;
+    letter-spacing: 3px;
+    border-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-top-left-radius: 0;
+}
+.box_Query .btn_search.btn_bg_brown{
+    background-color: #6F524B;
+  }
   </style>
- </head>
- <body>
- <div id="wrap">
-  <div id="subwrap">
-   <div id="content"><pre>现在我们要使这段文字垂直居中显示！
- div#wrap {
-  border:1px solid #FF0099;
-  background-color:#FFCCFF;
-  width:760px;
-  height:500px;
-  position:relative;
- }
- div#subwrap {
-  position:absolute;
-  border:1px solid #000;
-  top:50%;
- }
- div#content {
-  border:1px solid #000;
-  position:relative;
-  top:-50%;
- }</pre>
-  </div>
- </div>
-</div>
- </body>
+
+</head>
+<body>
+    <div class="box_Query">
+        <div class="form-group">
+           <input name="name" id="search" type="text" class="form-control input-lg input_Menber" placeholder="请输入手牌号" required="">
+        </div>
+        <input type="button" class="btn btn_search" value="自动激活">
+      </div>
+      <div class="box_Query">
+        <div class="form-group">
+           <input name="name" id="search" type="text" class="form-control input-lg input_Menber" placeholder="请输入手牌号" required="">
+        </div>
+        <input type="button" class="btn btn_search btn_bg_brown" value="自动解绑">
+      </div>
+</body>
 </html>

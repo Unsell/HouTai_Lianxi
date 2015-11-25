@@ -1,0 +1,253 @@
+
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+.body{
+	
+}
+.content{
+	width: 100%;
+	padding: 0;
+	background-color: #F0F0F0 !important;
+}
+.culb_title {
+    position: relative;
+    color: #328CCE;
+    font-size: 22px;
+    background: white;
+    margin: 0;
+    
+}
+.culb_title div{
+	line-height: 38px;
+    height: 38px;
+	margin: 10px 2% 0;
+	 border-bottom: 1px solid #D5E3EF;
+}
+.shift-content{
+	width: 100%;
+	padding: 30px 0 0 30px;
+}
+.box-shift-technician{
+	float: left;
+	width: 220px;
+	height: 250px;
+	padding-top: 25px;
+	border-radius: 2px;
+	box-shadow: 0 0 5px 5px #E0E0E9;
+	background-color: white;
+	position: relative;
+	margin-right: 4%;
+	margin-bottom: 40px;
+}
+.box-shift-technician .no-shift-title{
+	padding-left: 20px;
+	font-size: 20px;
+	color: #333232;
+}
+
+.box-shift-technician .no-shift-number{
+	padding-left: 20px;
+	color: #524D4D;
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+.box-shift-technician .no-shift-number .number{
+	font-size: 32px;
+	line-height: 1;
+	margin-right: 20px;
+}
+.box-shift-technician .btn-appoint-shift{
+	position: absolute;
+	left: 20px;
+	bottom: 40px;
+	background-color: #4D5358;
+	border-radius: 0;
+	border-color: #4D5358;
+	color: white;
+	padding: 4px 10px;
+	width: 120px;
+}
+.box-shift-technician .shift-time{
+	padding-left: 20px;
+	font-size: 0.9em;
+	color: #524D4D;
+}
+.box-shift-technician .shift-infor{
+	width: 96%;
+	height: 40px;
+	padding: 0 10px 0 15px;
+	line-height: 40px;
+	margin: 0 auto;
+	background-color: #ECEBEB;
+	border-bottom: 1px solid #B3B3B3;
+}
+.box-shift-technician>.shift-infor.clearborder{
+	border: none;
+}
+.shift-infor .status-num{
+	color: #5D4A4A;	
+}
+.shift-infor .status-num:hover{
+	text-decoration: none;
+}
+.shift-infor .btn-shift{
+	float: right;
+	margin-top: 8px;
+	padding: 3px 10px;
+	background-color: #4D5358;
+	color: white;
+	font-size: 0.65em;
+}
+.work-tips{
+	color: red;
+	font-size: 0.9em;
+	margin: 5px 0 0 15px;
+}	
+.btn-modify-shift{
+	position: absolute;
+	bottom: -25px;
+	left: 1px;
+	background: #03B9E6;
+	color: white;
+	width: 70px;
+	padding: 3px 8px;
+	border-radius: 2px;
+	font-size: 0.7em;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+.btn-delete-shift{
+	position: absolute;
+	bottom: -25px;
+	left: 75px;
+	background: #6AB36A;
+	color: white;
+	width: 70px;
+	padding: 3px 8px;
+	font-size: 0.7em;
+	border-radius: 2px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+.add-new-shift {
+	cursor: pointer;
+}
+
+/*弹窗---删除班次*/
+.Popup-shift{
+    -webkit-user-select: none;
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    background-repeat: repeat-x;
+    top: 0;
+    left: 0;
+    z-index: 105;
+}
+.box-operation-shift {
+    width: 35%;
+    background: white;
+    margin: 8% auto 0;
+    border-radius: 3px;
+    padding: 30px 20px 10px;
+    color: #666666;
+    position: relative;
+}
+.box_title {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    color: #666666;
+    font-size: 24px;
+    border-bottom: 2px solid #E4E3E3;
+}
+.form-operation-shift{
+	width: 85%;
+    margin: 20px auto 65px;
+    min-height: 100px;
+}
+.form-operation-shift .control-label{
+	font-weight: 500;
+	font-size: 1.3em;
+	color: #666666;
+	padding: 7px 0 0 5%;
+	float: left;
+}
+select.form-control{
+	min-width: 120px;
+}
+.box-button {
+	width: 100%;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    text-align: center;
+}
+.box-button button {
+    width: 39%;
+}
+
+.btn-confirm{
+    padding: 8px 12px;
+    font-size: 16px;
+    color: white;
+    border-radius: 1px;
+    background: #13C45A;
+}
+.btn-cancle{
+	padding: 8px 12px;
+    font-size: 16px;
+    color: #807676;
+    border-radius: 1px;
+}
+/*班次单选项*/
+.box-shift{
+	padding: 0 0 10px 8%;
+	min-height: 60px;
+	max-height: 120px;
+	overflow-y: auto;
+}
+
+/*弹窗---添加班次*/
+
+.box-add-shift .form-group {
+    margin: 15px auto 0;
+    color: #736d6d;
+    width: 95%;
+}
+.form-group label {
+    font-size: 16px;
+    font-weight: 200;
+    color: #736d6d;
+    margin-bottom: 15px;
+}
+.box-add-shift .form-group input {
+    margin: 0;
+    width: 100%;
+}
+.work_time_chose {
+    width: 45%;
+    display: inline-block;
+    float: left;
+    height: 37px;
+}
+.point {
+    float: left;
+    padding: 0 4%;
+}
+.box-add-shift .form-group .margin_top {
+    margin-top: 15px;
+    
+}
+
+

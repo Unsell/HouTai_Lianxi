@@ -1,3 +1,31 @@
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+.CulbIofor{
+	width: 80%;
+	margin: 1em auto;
+	font-size: 1.5em;
+}
+.CulbIofor .CulbInforOption{
+	float: left;
+	color: #666666;
+}
+.CulbIofor .InforState{
+	float: right;
+}
+.CulbIofor .InforState.glyphicon-remove{
+	color: #A94442;
+}
+.CulbIofor .InforState.glyphicon-ok{
+	color: #3C763D;
+}
 
 .content_Voucher_Query{
 	text-align: center;

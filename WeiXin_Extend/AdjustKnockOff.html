@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.js"></script>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link href="https://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/ClassAdjust.css"/>
+		<title>下班调整</title>
+	</head>
+	<body>
+		<div class="content">
+			<h3 class="culb_title"><button type="button" class="btn btn-back">返回</button></h3>
+			<table class="table table-hover table-bordered table-class-adjustment">	
+				<tr>
+					<td colspan="9" class="table-title">下班调整</td>
+				</tr>
+				<tr>
+					<td colspan="9" class="technician-statu">
+						<span class="status-title">技师状态：</span>
+						<label class="radio-inline">
+						  <input type="radio" name="technician-statu" id="" value="option1"> 闲
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="technician-statu" id="" value="option2"> 忙
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="technician-statu" id="" value="option3" checked> 全部
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="9" class="technician-statu">
+						<span class="status-title">订单状态：</span>
+						<label class="radio-inline">
+						  <input type="radio" name="order-statu" id="" value="option1"> 停止接单
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="order-statu" id="" value="option2"> 继续接单
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="order-statu" id="" value="option3" checked> 全部
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<th><input type="checkbox" name="" value="368"></th>
+					<th>工号</th>
+					<th>姓名</th>
+					<th>性别</th>
+					<th>手机</th>
+					<th>工种</th>
+					<th>当前状态</th>
+					<th>接单状态</th>
+					<th>操作</th>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" value="368"></td>
+					<td>00000001</td>
+					<td>Lucy</td>
+					<td>女</td>
+					<td>13689476432</td>
+					<td>美容</td>
+					<td>闲</td>
+					<td>继续接单</td>
+					<td>
+						<span class="type-adjust">下班</span>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" value="368"></td>
+					<td>00000001</td>
+					<td>Lucy</td>
+					<td>女</td>
+					<td>13689476432</td>
+					<td>美容</td>
+					<td>闲</td>
+					<td>继续接单</td>
+					<td>
+						<span class="type-adjust">下班</span>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" value="368"></td>
+					<td>00000001</td>
+					<td>Lucy</td>
+					<td>女</td>
+					<td>13689476432</td>
+					<td>美容</td>
+					<td>闲</td>
+					<td>继续接单</td>
+					<td>
+						<span class="type-adjust">下班</span>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" class="ck_en" value="368"></td>
+					<td>00000001</td>
+					<td>Lucy</td>
+					<td>女</td>
+					<td>13689476432</td>
+					<td>美容</td>
+					<td>闲</td>
+					<td>继续接单</td>
+					<td>
+						<span class="type-adjust">下班</span>
+					</td>
+				</tr>
+			</table>
+			<button type="button" class="btn btn-adjust-batch">批量下班</button>
+		</div>
+		<!--弹窗---个人下班-->
+		<div class="Popup-adjust-class">
+			<div class="box-adjust-class">
+				<div class="box_title">调整班次</div>
+				<form class="form-horizontal form-adjust-class">
+					<div class="form-group">
+						<label class="control-label">确认让XXX技师下班？</label>
+					    
+					</div>
+				    <div class="box_button">
+						<button class="btn btn-cancle cancle-adjust-class" type="button">取消</button>
+						<button class="btn btn-confirm confirm-adjust-class" type="submit" name="confirm_button">确定</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!--弹窗---批量下班-->
+		<div class="Popup-batch-adjust-class">
+			<div class="box-adjust-class">
+				<div class="box_title">批量技师下班</div>
+				<form class="form-horizontal form-adjust-class clearfix">
+					<div class="work-adjust-title">确认下列技师下班？</div>
+					<div class="pitch-on-technician">
+						<div class="technician-infor infor-title clearfix">
+							<div class="technician-number">工号</div>
+							<div class="technician-name">姓名</div>
+						</div>
+						<div class="technician-infor clearfix">
+							<div class="technician-number">0004</div>
+							<div class="technician-name">啊实打实</div>
+						</div>
+						<div class="technician-infor clearfix">
+							<div class="technician-number">0004</div>
+							<div class="technician-name">啊实打实</div>
+						</div>
+						<div class="technician-infor clearfix">
+							<div class="technician-number">0004</div>
+							<div class="technician-name">啊实打实</div>
+						</div>
+						<div class="technician-infor clearfix">
+							<div class="technician-number">0004</div>
+							<div class="technician-name">啊实打实</div>
+						</div>
+						<div class="technician-infor clearfix">
+							<div class="technician-number">0004</div>
+							<div class="technician-name">啊实打实</div>
+						</div>
+						
+						
+						
+					</div>
+				  	<div class="box_button clearfix">
+						<button class="btn btn-cancle cancle-batch-adjust-class" type="button">取消</button>
+						<button class="btn btn-confirm confirm-batch-adjust-class" type="submit" name="confirm_button">确定</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				// 打开弹窗---个人调整班次
+				$('.type-adjust').click(function(){
+					$('.Popup-adjust-class').show();
+				})
+				$('.cancle-adjust-class').click(function(){
+					$('.Popup-adjust-class').hide();
+				})
+				
+				// 打开弹窗---批量调整班次
+				$('.btn-adjust-batch').click(function(){
+					$('.Popup-batch-adjust-class').show();
+				})
+				$('.cancle-batch-adjust-class').click(function(){
+					$('.Popup-batch-adjust-class').hide();
+				})
+			})
+		</script>
+	</body>
+</html>

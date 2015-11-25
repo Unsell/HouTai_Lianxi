@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.div1,.div2{
+				margin: 20px;
+				position: absolute;
+				z-index: 10;
+			}
+			.div1{
+				left: 0;
+				top: 100px;
+			}
+			.div2{
+				left: 500px;
+				top: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1"><img src="../img/1.jpg" alt="" width="200px" /></div>
+		<div class="div2"><img src="../img/4.jpg" alt="" width="200px" /></div>
+		<script type="text/javascript">
+			$(function(){
+				$('.div1').click(function(){
+					$('.div1').mousemove(function(e){
+						alert(e.clientX);
+						$('.div1').css({
+							left: e.clientX,
+							top: e.clientY
+						})
+					})
+				})
+			})
+		</script>
+	</body>
+</html>

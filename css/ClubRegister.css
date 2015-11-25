@@ -1,0 +1,180 @@
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+.floatLeft{
+	float: left;
+	position: relative;
+}
+.content{
+	width: 96%;
+	margin: 10px auto;
+	color: #666666;
+}
+.red{
+	color: red;
+	margin-left: -8px;
+}
+.TipsRegister{
+	font-size: 1em;
+	margin-top: 20px;
+}
+.box_CulbInfor{
+	margin: 30px auto;
+}
+.nav-tabs>li{
+	width: 140px;
+}
+
+.nav-tabs>li>a{
+	background: #EBEBEB;
+	color: #666666 !important;
+	font-size: 17px;
+	border: 1px solid #CCCCCC;
+	border-radius: 0;
+	margin-right: 0;
+	text-align: center;
+}
+.tab-content {
+    border: 1px solid #DEDEDE;
+    padding: 16px 12px;
+    position: relative;
+    z-index: 11;
+    border-top: none;
+    margin-bottom: 50px;
+}
+
+#CulbShift .box_add_wk{
+	width: 30%;
+	margin: 40px auto 0;
+}
+#CulbShift .box_add_wk .form-group input,#CulbShift .box_add_wk .form-group select{
+	height: 37px;
+}
+#CulbShift .box_add_wk .form-group label{
+	font-weight: normal;
+	font-size: 1.3em;
+	margin-bottom: 15px;
+}
+#CulbShift .box_add_wk .form-group .work_time_chose{
+	width: 45%;
+    float: left;
+    margin-bottom: 15px;
+}
+#CulbShift .box_add_wk .form-group .point{
+    float: left;
+    padding: 0 4%;
+   	font-weight: bold;
+    line-height: 37px;
+}
+#CulbShift .box_add_wk .btn_Add_WK{
+	width: 80%;
+	margin: 30px 10% 0;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: white;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    background: #13C45A;
+}
+
+#CulbProject .box_add_Project{
+	width: 80%;
+	margin: 40px 13% 0 7%;
+}
+
+#CulbProject .box_add_Project .form-group label{
+	font-weight: normal;
+	font-size: 1.3em;
+	margin-bottom: 10px;
+}
+#CulbProject .box_add_Project .form-group{
+	width: 45%;
+	height: 72px;
+	margin-right: 5%;
+}
+#CulbProject .box_add_Project .form-group.divTextarea{
+	width: 95%;
+}
+#CulbProject .box_add_Project .form-group.divTextarea textarea{
+	min-height: 100px;
+}
+#CulbProject .box_add_Project .form-group input{
+	height: 37px;
+}
+/*提示框*/
+/* bubble */
+.tip-bubble {
+	  display: none;
+	  position: relative;
+	  left: 40%;
+	  top: -77px;
+	  z-index: 12;
+	  border: 1px solid #0A7D61;
+	  background: #F2F2F2;
+	  padding: 10px 20px;
+	  color: #555555;
+	  font-size: 0.6em;
+	  letter-spacing: 1px;
+	  text-align: center;
+	  border-radius: 5px;
+	  border: 1px solid #E6E6E6;
+	  box-shadow: 2px 2px 3px #DADADA;
+	  -moz-box-shadow: 2px 2px 3px #DADADA;
+	  -webkit-border-shadow: 2px 2px 3px #DADADA;
+}
+.tip-bubble:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 12px solid;
+}
+.tip-bubble-top:after {
+  border-color: #F2F2F2 transparent transparent;
+  left: 50%;
+  top: 100%;
+}
+#CulbWork>.box_AddTypeWork{
+	width: 60%;
+	margin: 40px auto 0;
+}
+#CulbWork>.box_AddTypeWork .form-group label{
+	font-weight: normal;
+	font-size: 1.8em;
+	margin-bottom: 10px;
+}
+#CulbWork>.box_AddTypeWork .form-group input{
+	height: 37px;
+	/*width: 90%;*/
+}
+
+#CulbWork>.box_AddTypeWork .form-group input::-webkit-input-placeholder{
+	
+}
+.box_button{
+	width: 32%;
+	text-align: center;
+	position: absolute;
+	bottom: 60px;
+	left: 34%;
+}
+.box_button .btn_cancle{
+	width: 48%;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #807676;
+}
+.box_button .btn_confirm{
+	width: 48%;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: white;
+    background: #13C45A;
+}

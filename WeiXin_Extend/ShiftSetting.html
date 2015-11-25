@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.js"></script>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link href="https://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/ShiftSetting.css"/>
+		<title>班次设定</title>
+	</head>
+	<body>
+		<div class="content">
+			<h3 class="culb_title"><div>班次设定</div></h3>
+			<div class="shift-content clearfix">
+				<div class="box-shift-technician">
+					<div class="no-shift-title">无班次</div>
+					<div class="no-shift-number">
+						<span class="number">134</span>
+						<span>人</span>
+					</div>
+					<button type="button" class="btn btn-appoint-shift">指定班次</button>
+				</div>
+				<div class="box-shift-technician">
+					<div class="no-shift-title">A班</div>
+					<div class="shift-time">09:00~18:00</div>
+					<div class="shift-infor clearfix">
+						<a href="" class="status-num">技师：&nbsp;135&nbsp;人</a>
+						<button type="button" class="btn btn-shift btn-swap-shift">班次对调</button>
+					</div>
+					<div class="shift-infor clearfix">
+						<a href="" class="status-num">下班：&nbsp;35&nbsp;人</a>
+						<button type="button" class="btn btn-shift btn-gowork-shift">全部上班</button>
+					</div>
+					<div class="shift-infor clearborder clearfix">
+						<a href="" class="status-num">当值：&nbsp;35&nbsp;人</a>
+					</div>
+					<div class="work-tips">还有13个人未下班！</div>
+					<button type="button" class="btn btn-modify-shift">修改</button>
+					<button type="button" class="btn btn-delete-shift">删除</button>
+				</div>
+				<div class="box-shift-technician add-new-shift">
+					<canvas id="canvas-add-shift" width="" height=""></canvas>
+				</div>
+			</div>
+		</div>
+		<!--弹窗---删除班次-->
+		<div id="Popup-delete-shift" class="Popup-shift">
+			<div class="box-operation-shift">
+				<div class="box_title">删除班次</div>
+				<form class="form-horizontal form-operation-shift">
+					<div class="form-group">
+						<label class="control-label">确认删除此班次？</label>
+					</div>
+				    <div class="box-button">
+						<button class="btn btn-cancle cancle-delete-shift" type="button">取消</button>
+						<button class="btn btn-confirm confirm-delete-shift" type="submit" >确定</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!--弹窗---指定班次-->
+		<div id="Popup-appoint-shift" class="Popup-shift ">
+			<div class="box-operation-shift">
+				<div class="box_title">指定班次</div>
+				<form class="form-horizontal form-operation-shift">
+					 <div class="form-group">
+					    <label class="control-label">指定所有技师班次到：</label>
+					    <div class="col-sm-5">
+					      <select class="form-control">
+							  <option>1</option>
+							  <option>2</option>
+							  <option>3</option>
+							  <option>4</option>
+							  <option>5</option>
+							</select>
+					    </div>
+					  </div>
+				  
+				  <div class="box-button">
+						<button class="btn btn-cancle cancle-appoint-shift" type="button">取消</button>
+						<button class="btn btn-confirm confirm-appoint-shift" type="submit">确定</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!--弹窗---全部上班-->
+		<div id="Popup-gowork-shift" class="Popup-shift ">
+			<div class="box-operation-shift">
+				<div class="box_title">全部上班</div>
+				<form class="form-horizontal form-operation-shift">
+					<div class="form-group">
+						<label class="control-label">确认让所有在值技师上班？</label>
+					</div>
+				    <div class="box-button">
+						<button class="btn btn-cancle cancle-gowork-shift" type="button">取消</button>
+						<button class="btn btn-confirm confirm-gowork-shift" type="submit" >确定</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!--弹窗---修改班次-->
+		<div id="Popup-modify-shift" class="Popup-shift ">
+			<div class="box-operation-shift">
+				<div class="box_title">修改班次</div>
+				<form class="form-horizontal form-operation-shift">
+					 <div class="form-group">
+					    <label class="control-label">修改班次为：</label>
+					    <div class="col-sm-5">
+					      <select class="form-control">
+							  <option>1</option>
+							  <option>2</option>
+							  <option>3</option>
+							  <option>4</option>
+							  <option>5</option>
+							</select>
+					    </div>
+					  </div>
+				  
+				  <div class="box-button">
+					<button class="btn btn-cancle cancle-modify-shift" type="button">取消</button>
+					<button class="btn btn-confirm confirm-modify-shift" type="submit">确定</button>
+				  </div>
+				</form>
+			</div>
+		</div>
+		<!--弹窗---班次对调-->
+		<div id="Popup-swap-shift" class="Popup-shift ">
+			<div class="box-operation-shift">
+				<div class="box_title">班次对调</div>
+				<form class="form-horizontal form-operation-shift">
+					<div class="form-group">
+						<label class="control-label">您想将A班技师与哪个班次对调：</label>
+					</div>
+					<div class="box-shift">
+						<div class="radio">
+						  <label>
+						    <input type="radio" name="shift" id="" value="option1" aria-label="..."> A班
+						  </label>
+						</div>
+						<div class="radio">
+						  <label>
+						    <input type="radio" name="shift" id="" value="option2" aria-label="..."> B班
+						  </label>
+						</div>
+						<div class="radio">
+						  <label>
+						    <input type="radio" name="shift" id="" value="option3" aria-label="..."> C班
+						  </label>
+						</div>
+					</div>
+				    <div class="box-button">
+						<button class="btn btn-cancle cancle-swap-shift" type="button">取消</button>
+						<button class="btn btn-confirm confirm-swap-shift" type="submit" >确定</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!--弹窗---添加班次-->
+		<div id="Popup-add-shift" class="Popup-shift">
+			<div class="box-operation-shift box-add-shift">
+				<div class="box_title">添加班次</div>
+				<form class="form-horizontal form-operation-shift">
+					<div class="form-group clearfix">
+						<label for="">请输入您要添加的班次名称:</label>
+						<input type="text" id="wk_name" class="form-control" placeholder="如：早班，晚班..." name="name" required="">
+					</div>
+					<div class="form-group clearfix">
+						<label for="">请选择上班时间:</label>
+					    <div>
+					    	<select id="date_hour" name="date[start_time_hour]" class="form-control work_time_chose">
+								<option value="00">00</option>
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08" selected="selected">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+							</select>
+							<span class="point">:</span> 
+							<select id="date_minute" name="date[start_time_minute]" class="form-control work_time_chose">
+								<option value="00" selected="selected">00</option>
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+								<option value="25">25</option>
+								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="28">28</option>
+								<option value="29">29</option>
+								<option value="30">30</option>
+								<option value="31">31</option>
+								<option value="32">32</option>
+								<option value="33">33</option>
+								<option value="34">34</option>
+								<option value="35">35</option>
+								<option value="36">36</option>
+								<option value="37">37</option>
+								<option value="38">38</option>
+								<option value="39">39</option>
+								<option value="40">40</option>
+								<option value="41">41</option>
+								<option value="42">42</option>
+								<option value="43">43</option>
+								<option value="44">44</option>
+								<option value="45">45</option>
+								<option value="46">46</option>
+								<option value="47">47</option>
+								<option value="48">48</option>
+								<option value="49">49</option>
+								<option value="50">50</option>
+								<option value="51">51</option>
+								<option value="52">52</option>
+								<option value="53">53</option>
+								<option value="54">54</option>
+								<option value="55">55</option>
+								<option value="56">56</option>
+								<option value="57">57</option>
+								<option value="58">58</option>
+								<option value="59">59</option>
+								</select>
+						</div>
+	
+						<label class="margin_top" for="">请选择下班时间:</label>
+					    <div>
+						    <select id="date_hour" name="date[end_time_hour]" class="form-control work_time_chose">
+									<option value="00">00</option>
+									<option value="01">01</option>
+									<option value="02">02</option>
+									<option value="03">03</option>
+									<option value="04">04</option>
+									<option value="05">05</option>
+									<option value="06">06</option>
+									<option value="07">07</option>
+									<option value="08">08</option>
+									<option value="09">09</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20" selected="selected">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+								</select>
+							<span class="point">:</span> 
+							<select id="date_minute" name="date[end_time_minute]" class="form-control work_time_chose">
+								<option value="00" selected="selected">00</option>
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+								<option value="25">25</option>
+								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="28">28</option>
+								<option value="29">29</option>
+								<option value="30">30</option>
+								<option value="31">31</option>
+								<option value="32">32</option>
+								<option value="33">33</option>
+								<option value="34">34</option>
+								<option value="35">35</option>
+								<option value="36">36</option>
+								<option value="37">37</option>
+								<option value="38">38</option>
+								<option value="39">39</option>
+								<option value="40">40</option>
+								<option value="41">41</option>
+								<option value="42">42</option>
+								<option value="43">43</option>
+								<option value="44">44</option>
+								<option value="45">45</option>
+								<option value="46">46</option>
+								<option value="47">47</option>
+								<option value="48">48</option>
+								<option value="49">49</option>
+								<option value="50">50</option>
+								<option value="51">51</option>
+								<option value="52">52</option>
+								<option value="53">53</option>
+								<option value="54">54</option>
+								<option value="55">55</option>
+								<option value="56">56</option>
+								<option value="57">57</option>
+								<option value="58">58</option>
+								<option value="59">59</option>
+								</select>
+						</div>	
+					</div>
+					<div class="box-button clearfix">
+						<button class="btn btn-cancle cancle-add-shift" type="button">取消</button>
+						<button class="btn btn-confirm confirm-add-shift" type="submit">确定</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var canvas = document.getElementById("canvas-add-shift");
+			var context = canvas.getContext("2d");
+			var AddShift;
+			AddShift = function(){
+					var str = '<div class="box-shift-technician">'+
+								'<div class="no-shift-title">A班</div>'+
+								'<div class="shift-time">09:00~18:00</div>'+
+								'<div class="shift-infor clearfix">'+
+									'<a href="" class="status-num">技师：&nbsp;135&nbsp;人</a>'+
+									'<button type="button" class="btn btn-shift btn-swap-shift">班次对调</button>'+
+								'</div>'+
+								'<div class="shift-infor clearfix">'+
+									'<a href="" class="status-num">下班：&nbsp;35&nbsp;人</a>'+
+									'<button type="button" class="btn btn-shift btn-gowork-shift">全部上班</button>'+
+								'</div>'+
+								'<div class="shift-infor clearborder clearfix">'+
+									'<a href="" class="status-num">当值：&nbsp;35&nbsp;人</a>'+
+								'</div>'+
+								'<div class="work-tips">还有13个人未下班！</div>'+
+								'<button type="button" class="btn btn-modify-shift">修改</button>'+
+								'<button type="button" class="btn btn-delete-shift">删除</button>'+
+							'</div>';
+						$(".add-new-shift").before(str);
+					return true;
+				}
+			
+			$(function(){
+				$(".shift-content").css("min-height",window.innerHeight-48);
+				
+				// 弹窗操作
+				// 操作指定班次弹窗
+				$(".shift-content").on("click", ".btn-appoint-shift", function(){
+					$("#Popup-appoint-shift").show();
+				})
+				$("#Popup-appoint-shift").on("click", ".cancle-appoint-shift", function(){
+					$("#Popup-appoint-shift").hide();
+				})
+				
+				
+				// 操作班次对调弹窗
+				$(".shift-content").on("click", ".btn-swap-shift", function(){
+					$("#Popup-swap-shift").show();
+				})
+				$("#Popup-swap-shift").on("click", ".cancle-swap-shift", function(){
+					$("#Popup-swap-shift").hide();
+				})
+				
+				
+				// 操作全部上班弹窗
+				$(".shift-content").on("click", ".btn-gowork-shift", function(){
+					$("#Popup-gowork-shift").show();
+				})
+				$("#Popup-gowork-shift").on("click", ".cancle-gowork-shift", function(){
+					$("#Popup-gowork-shift").hide();
+				})
+				
+				
+				// 操作修改班次弹窗
+				$(".shift-content").on("click", ".btn-modify-shift", function(){
+					$("#Popup-modify-shift").show();
+				})
+				$("#Popup-modify-shift").on("click", ".cancle-modify-shift", function(){
+					$("#Popup-modify-shift").hide();
+				})
+				
+				
+				// 操作删除班次弹窗
+				$(".shift-content").on("click", ".btn-delete-shift", function(){
+					$("#Popup-delete-shift").show();
+				})
+				$("#Popup-delete-shift").on("click", ".cancle-delete-shift", function(){
+					$("#Popup-delete-shift").hide();
+				})
+				
+				
+				// 操作添加班次弹窗
+				$(".add-new-shift").click(function(){
+					$("#Popup-add-shift").show();
+				})
+				$(".cancle-add-shift").click(function(){
+					$("#Popup-add-shift").hide();
+				})
+				$(".confirm-add-shift").click(function(){
+					$("#Popup-add-shift").hide();
+					AddShift();
+				})
+				
+				
+				// 绘制加号
+				canvas.height = 225;
+				canvas.width = 220;
+				
+				context.beginPath();
+				context.moveTo(110, 70);
+				context.lineTo(110, 126);
+				context.stroke();
+				
+				context.moveTo(80, 100);
+				context.lineTo(140, 100);
+				context.stroke();
+				context.closePath();
+				
+				
+			})
+			
+			
+		</script>
+	</body>
+</html>

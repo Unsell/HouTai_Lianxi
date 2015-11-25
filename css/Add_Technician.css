@@ -61,6 +61,7 @@
 .box_btn_addTechnician{
 	float: right;
 	margin: 0 10px 8px 0;
+	position: relative;
 }
 .box_btn_addTechnician .btn_addTechnician{
 	border: none;
@@ -127,6 +128,7 @@
     border-radius: 3px;
     padding: 30px 20px 10px;
     color: #666666;
+    position: relative;
 }
 
 .box_title {
@@ -219,7 +221,7 @@
 }
 .box_BatchAddTechnician .Search_center{
 	width: 85%;
-	margin: 35px auto 20px;
+	margin: 20px auto 20px;
 	position: relative;
 }
 .box_BatchAddTechnician .Search_center .Input_Center{
@@ -253,5 +255,79 @@
 }
 .box_BatchAddTechnician .box_button button{
 	width: 42%;
-	
 }
+
+
+/*提示示例---CSS*/
+.prompt-content{
+	position: absolute;
+	top: 145px;
+	right: 15%;
+	cursor: pointer;
+}
+.prompt-content:hover{
+	color: #328CCE;
+}
+.prompt-content span{
+	font-size: 0.9em;
+}
+.prompt-img{
+	display: none;
+	margin-left: 10%;
+	margin-top: -20px;
+}
+.prompt-img img{
+	width: 90%;
+}
+
+/*提示框*/
+/* bubble */
+.tip-bubble {
+	display: none;
+	max-width: 300px;
+	min-width: 250px;
+	max-height: 600px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	color: #328cce;
+	  position: absolute;
+	  left: -103%;
+	  top: -150%;
+	  z-index: 12;
+	  border: 1px solid #0A7D61;
+	  background: white;
+	  font-size: 1.05em;
+	  border-radius: 5px;
+	  border: 1px solid #E6E6E6;
+	  box-shadow: 1px 1px 2px #E6E6E6;
+	  -moz-box-shadow: 1px 1px 2px #E6E6E6;
+	  -webkit-border-shadow: 1px 1px 2px #E6E6E6;
+}
+.tip-bubble:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 10px solid;
+}
+.tip-bubble-top:after {
+  border-color: transparent transparent transparent ;
+  right: -8%;
+  top: 50%;
+  margin-left: -15px;
+}
+.tip-bubble .infor-title{
+	background-color: #F7F7F7;
+	padding: 8px 14px;
+	width: 100%;
+	border-bottom: 1px solid #EBEBEB;
+	-webkit-border-top-right-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+}
+.tip-bubble .wifi-infor{
+	margin-bottom: 10px;
+	padding: 8px 14px;
+}
+
+
+

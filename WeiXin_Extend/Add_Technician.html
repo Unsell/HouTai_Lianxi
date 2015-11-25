@@ -5,6 +5,7 @@
 		<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
 		<script type="text/javascript" src="../js/bootstrap.js"></script>
 		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link href="https://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../css/Add_Technician.css"/>
 		<title>添加技师</title>
 	</head>
@@ -21,6 +22,16 @@
 			</div>
 			<div class="show_Technician">
 				<div class="box_btn_addTechnician clearfix">
+					<div class="tip-bubble tip-bubble-top">
+						<div class="infor-title">WIFI列表</div>
+						<div class="wifi-infor">
+							<div class="wiifi-name">WIFI名称：sadasd</div>
+							<div class="wiifi-password">WIFI密码：sadasd</div>
+						</div>
+						
+						
+						
+					</div>
 					<button type="button" class="btn btn_addTechnician AddTechnician_Batch">批量添加技师</button>
 					<button type="button" class="btn btn_addTechnician AddTechnician_single">添加单个技师</button>
 				</div>
@@ -106,6 +117,7 @@
 					<button type="button" class="btn btn_deleteTechnician">批量修改头像</button>
 				</div>
 			</div>
+			
 		</div>
 		<!--弹窗---添加技师-->
 		<div class="Popup_addTechnician">
@@ -167,6 +179,13 @@
 					<div class="box_btnDownLoad">
 						<button class="btn btn_downLoadFile" type="button">下载文件</button>
 					</div>
+					<div class="prompt-content">
+						<span >查看示例</span>
+						<i class="fa fa-angle-double-down"></i>
+					</div>
+				</div>
+				<div class="prompt-img">
+					<img src="../img/Tip-images.png" alt="" />
 				</div>
 				<form action="" method="get" id="">
 					<div class="search_box Search_center">
@@ -184,9 +203,41 @@
 				</form>
 			</div>
 		</div>
+		
 		<script type="text/javascript">
+
 			$(function(){
 				
+				$('.AddTechnician_Batch').hover(
+					function(){
+						$(".tip-bubble").show();
+				},function(){
+					$(".tip-bubble").hide();
+				});
+				$(".tip-bubble").mouseover(function(){
+					$(".tip-bubble").show();
+				})
+				$(".tip-bubble").mouseleave(function(){
+					$(".tip-bubble").hide();
+				})
+				//点击查看提示示例
+				$('.prompt-content').click(function(){
+					$('.prompt-img').toggle();
+					var icon = $('.prompt-content').find('i');
+					if(icon.hasClass("fa-angle-double-down")){
+						icon.removeClass("fa-angle-double-down");
+						icon.addClass("fa-angle-double-up")
+					}else{
+						icon.removeClass("fa-angle-double-up");
+						icon.addClass("fa-angle-double-down")
+					}
+				})
+				
+				
+				
+				$('.btn-close-popup').click(function(){
+					$('.Popup-bind-tips').hide();
+				})
 				//选择文件显示文件名
 				$('#ChooseFile').change(function(){
 					var str = $(this).val();
